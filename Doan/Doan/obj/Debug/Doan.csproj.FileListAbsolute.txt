@@ -1,0 +1,10 @@
+D:\NĂM 3-HK1\.Net\Doan\Doan\bin\Debug\Doan.exe.config
+D:\NĂM 3-HK1\.Net\Doan\Doan\bin\Debug\Doan.exe
+D:\NĂM 3-HK1\.Net\Doan\Doan\bin\Debug\Doan.pdb
+D:\NĂM 3-HK1\.Net\Doan\Doan\obj\Debug\Doan.csproj.AssemblyReference.cache
+D:\NĂM 3-HK1\.Net\Doan\Doan\obj\Debug\Doan.FrmDangNhap.resources
+D:\NĂM 3-HK1\.Net\Doan\Doan\obj\Debug\Doan.Properties.Resources.resources
+D:\NĂM 3-HK1\.Net\Doan\Doan\obj\Debug\Doan.csproj.GenerateResource.cache
+D:\NĂM 3-HK1\.Net\Doan\Doan\obj\Debug\Doan.csproj.CoreCompileInputs.cache
+D:\NĂM 3-HK1\.Net\Doan\Doan\obj\Debug\Doan.exe
+D:\NĂM 3-HK1\.Net\Doan\Doan\obj\Debug\Doan.pdb
