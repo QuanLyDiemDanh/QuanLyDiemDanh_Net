@@ -22,7 +22,11 @@ namespace Doan
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult r = MessageBox.Show("Bạn có muốn thoát chương trình ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (r == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
         private void btnDangNhap_Click(object sender, EventArgs e)
