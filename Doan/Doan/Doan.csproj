@@ -103,5 +103,29 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red_Color.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-codioful-%28formerly-gradienta%29-7135019.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooldownpink.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khung.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-logout-icon-vectors-png-image_1737872.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
