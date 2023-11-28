@@ -53,5 +53,51 @@ namespace Doan
                 new FrmDangNhap().Show();
             }
         }
+
+        private void thêmSinhViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           if(!checkExitsForm("FrmQuanLySV"))
+           {
+                FrmQuanLySV frm = new FrmQuanLySV();
+                frm.MdiParent = this;
+                frm.Name = "FrmQuanLySV";
+                frm.Show();
+           }    
+           else
+            {
+                ActiveChildForm("FrmQuanLySV");
+            }    
+
+        }
+
+        private void tsQLTK_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private bool checkExitsForm(string name)
+        {
+            bool check = false;
+            foreach(Form frm in this.MdiChildren)
+            {
+                if (frm.Name == name)
+                {
+                    check = true;
+                    break;
+                }    
+            }
+            return check;
+        }
+        private void ActiveChildForm(string name)
+        {
+            foreach(Form frm in this.MdiChildren)
+            {
+                if(frm.Name==name)
+                {
+                    frm.Activate();
+                    break;
+                }    
+            }    
+        }
     }
 }

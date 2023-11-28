@@ -10,7 +10,6 @@ D:\NĂM 3-HK1\.Net\Doan\Doan\obj\Debug\Doan.pdb
 D:\NĂM 3-HK1\.Net\Doan\Doan\obj\Debug\Doan.FrmAdmin.resources
 D:\NĂM 3-HK1\.Net\Doan\Doan\obj\Debug\Doan.FrmGiangVien.resources
 D:\NĂM 3-HK1\.Net\Doan\Doan\obj\Debug\Doan.csproj.AssemblyReference.cache
-C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.csproj.AssemblyReference.cache
 C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmAdmin.resources
 C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmDangNhap.resources
 C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmGiangVien.resources
@@ -22,3 +21,5 @@ C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\
 C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\bin\Debug\Doan.exe.config
 C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\bin\Debug\Doan.exe
 C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\bin\Debug\Doan.pdb
+C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmQuanLySV.resources
+C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.csproj.AssemblyReference.cache
