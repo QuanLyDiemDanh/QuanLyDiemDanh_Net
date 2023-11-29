@@ -56,18 +56,7 @@ namespace Doan
 
         private void thêmSinhViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           if(!checkExitsForm("FrmQuanLySV"))
-           {
-                FrmQuanLySV frm = new FrmQuanLySV();
-                frm.MdiParent = this;
-                frm.Name = "FrmQuanLySV";
-                frm.Show();
-           }    
-           else
-            {
-                ActiveChildForm("FrmQuanLySV");
-            }    
-
+          
         }
 
         private void tsQLTK_Click(object sender, EventArgs e)
@@ -98,6 +87,22 @@ namespace Doan
                     break;
                 }    
             }    
+        }
+
+        private void tsQuanLySV_Click(object sender, EventArgs e)
+        {
+            if (!checkExitsForm("FrmQuanLySV"))
+            {
+                FrmQuanLySV frm = new FrmQuanLySV();
+                frm.MdiParent = this;
+                frm.Name = "FrmQuanLySV";
+                frm.Show();
+            }
+            else
+            {
+                ActiveChildForm("FrmQuanLySV");
+            }
+
         }
     }
 }

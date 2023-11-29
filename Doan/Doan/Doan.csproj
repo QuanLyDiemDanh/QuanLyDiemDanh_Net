@@ -66,6 +66,7 @@
       <DependentUpon>FrmGiangVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\GiangVien.cs" />
+    <Compile Include="Models\Students.cs" />
     <Compile Include="Models\TaiKhoanAdmin.cs" />
     <Compile Include="Models\TaiKhoanGV.cs" />
     <Compile Include="Program.cs" />
@@ -138,6 +139,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\khung1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xoa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xoa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sua.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sua1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

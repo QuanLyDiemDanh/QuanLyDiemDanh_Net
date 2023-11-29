@@ -41,8 +41,6 @@ namespace Doan
             this.quảnLýTàiKhoảnGiảngViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýTàiKhoảnSinhVienToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsQuanLySV = new System.Windows.Forms.ToolStripMenuItem();
-            this.thêmSinhViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gánSinhViênVàoLớpHọcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsDangXuat = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -58,7 +56,7 @@ namespace Doan
             this.tsDangXuat});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(984, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1032, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -134,26 +132,11 @@ namespace Doan
             // 
             // tsQuanLySV
             // 
-            this.tsQuanLySV.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.thêmSinhViênToolStripMenuItem,
-            this.gánSinhViênVàoLớpHọcToolStripMenuItem});
             this.tsQuanLySV.Image = global::Doan.Properties.Resources.cooldownpink;
             this.tsQuanLySV.Name = "tsQuanLySV";
             this.tsQuanLySV.Size = new System.Drawing.Size(160, 24);
             this.tsQuanLySV.Text = "Quản Lý Sinh Viên";
-            // 
-            // thêmSinhViênToolStripMenuItem
-            // 
-            this.thêmSinhViênToolStripMenuItem.Name = "thêmSinhViênToolStripMenuItem";
-            this.thêmSinhViênToolStripMenuItem.Size = new System.Drawing.Size(265, 26);
-            this.thêmSinhViênToolStripMenuItem.Text = "Thêm,Xóa,Sửa Sinh viên";
-            this.thêmSinhViênToolStripMenuItem.Click += new System.EventHandler(this.thêmSinhViênToolStripMenuItem_Click);
-            // 
-            // gánSinhViênVàoLớpHọcToolStripMenuItem
-            // 
-            this.gánSinhViênVàoLớpHọcToolStripMenuItem.Name = "gánSinhViênVàoLớpHọcToolStripMenuItem";
-            this.gánSinhViênVàoLớpHọcToolStripMenuItem.Size = new System.Drawing.Size(265, 26);
-            this.gánSinhViênVàoLớpHọcToolStripMenuItem.Text = "Gán Sinh Viên vào lớp học";
+            this.tsQuanLySV.Click += new System.EventHandler(this.tsQuanLySV_Click);
             // 
             // tsDangXuat
             // 
@@ -167,7 +150,7 @@ namespace Doan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 575);
+            this.ClientSize = new System.Drawing.Size(1032, 575);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
@@ -196,7 +179,5 @@ namespace Doan
         private System.Windows.Forms.ToolStripMenuItem tạoVàXemBáoCáoĐiểmDanhToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tsDangXuat;
         private System.Windows.Forms.ToolStripMenuItem tsQuanLySV;
-        private System.Windows.Forms.ToolStripMenuItem thêmSinhViênToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gánSinhViênVàoLớpHọcToolStripMenuItem;
     }
 }

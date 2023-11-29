@@ -48,7 +48,6 @@ namespace Doan
 
         public SqlDataReader getReader(string str_connection)
         {
-
             SqlCommand cmd = new SqlCommand(str_connection, connect);
             SqlDataReader rd = cmd.ExecuteReader();
             return rd;
@@ -71,13 +70,13 @@ namespace Doan
             return ds;
         }
 
-        public int updateDatabase(DataTable dt)
-        {
-            string sql = "select * from GiangVien";
-            SqlDataAdapter da = new SqlDataAdapter(sql, connect);
-            SqlCommandBuilder cb = new SqlCommandBuilder(da);
-            int kq = da.Update(dt);
-            return kq;
-        }       
+        //public int updateDatabase(DataTable dt)
+        //{
+        //    string sql = "select * from GiangVien";
+        //    SqlDataAdapter da = new SqlDataAdapter(sql, connect);
+        //    SqlCommandBuilder cb = new SqlCommandBuilder(da);
+        //    int kq = da.Update(dt);
+        //    return kq;
+        //}       
     }
 }
