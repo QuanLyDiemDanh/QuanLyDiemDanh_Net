@@ -61,7 +61,6 @@ namespace Doan
 
         private void tsQLTK_Click(object sender, EventArgs e)
         {
-
         }
 
         private bool checkExitsForm(string name)
@@ -103,6 +102,32 @@ namespace Doan
                 ActiveChildForm("FrmQuanLySV");
             }
 
+        }
+
+        private void quảnLýTàiKhoảnGiảngViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void quảnLýTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (!checkExitsForm("FrmQuanLyTaiKhoanGV"))
+            {
+                FrmQuanLyTaiKhoanGV frm = new FrmQuanLyTaiKhoanGV();
+                frm.MdiParent = this;
+                frm.Name = "FrmQuanLyTaiKhoanGV";
+                frm.Show();
+            }
+            else
+            {
+                ActiveChildForm("FrmQuanLyTaiKhoanGV");
+            }
         }
     }
 }

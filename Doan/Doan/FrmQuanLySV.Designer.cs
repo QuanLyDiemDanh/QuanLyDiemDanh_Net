@@ -49,13 +49,13 @@ namespace Doan
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_HienThiALL = new System.Windows.Forms.Button();
             this.date_NgaySinh = new System.Windows.Forms.DateTimePicker();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnthem = new System.Windows.Forms.Button();
             this.btnxoa = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnupdate = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
             this.btnhuy = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSinhVien)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -259,6 +259,7 @@ namespace Doan
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chức năng";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btn_HienThiALL
             // 
@@ -283,17 +284,6 @@ namespace Doan
             this.date_NgaySinh.Size = new System.Drawing.Size(158, 30);
             this.date_NgaySinh.TabIndex = 19;
             this.date_NgaySinh.ValueChanged += new System.EventHandler(this.date_NgaySinh_ValueChanged);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.Color.Cornsilk;
-            this.groupBox2.Controls.Add(this.dataGridViewSinhVien);
-            this.groupBox2.Location = new System.Drawing.Point(12, 231);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(905, 306);
-            this.groupBox2.TabIndex = 21;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Thông tin sinh viên";
             // 
             // btnthem
             // 
@@ -387,6 +377,17 @@ namespace Doan
             this.btnhuy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnhuy.UseVisualStyleBackColor = false;
             this.btnhuy.Click += new System.EventHandler(this.btnhuy_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.Cornsilk;
+            this.groupBox2.Controls.Add(this.dataGridViewSinhVien);
+            this.groupBox2.Location = new System.Drawing.Point(12, 231);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(905, 306);
+            this.groupBox2.TabIndex = 21;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Thông tin sinh viên";
             // 
             // FrmQuanLySV
             // 
