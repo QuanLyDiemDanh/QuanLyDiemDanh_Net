@@ -68,7 +68,7 @@ namespace Doan
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(52, 66);
+            this.label2.Location = new System.Drawing.Point(66, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 17);
             this.label2.TabIndex = 1;
@@ -100,48 +100,66 @@ namespace Doan
             // 
             // btnthem
             // 
+            this.btnthem.BackColor = System.Drawing.Color.Chartreuse;
+            this.btnthem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnthem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnthem.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnthem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnthem.Location = new System.Drawing.Point(133, 110);
             this.btnthem.Name = "btnthem";
             this.btnthem.Size = new System.Drawing.Size(75, 23);
             this.btnthem.TabIndex = 6;
             this.btnthem.Text = "Thêm";
-            this.btnthem.UseVisualStyleBackColor = true;
+            this.btnthem.UseVisualStyleBackColor = false;
             // 
             // btnxoa
             // 
+            this.btnxoa.BackColor = System.Drawing.Color.Red;
+            this.btnxoa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnxoa.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnxoa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnxoa.Location = new System.Drawing.Point(224, 110);
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(75, 23);
             this.btnxoa.TabIndex = 7;
             this.btnxoa.Text = "Xóa";
-            this.btnxoa.UseVisualStyleBackColor = true;
+            this.btnxoa.UseVisualStyleBackColor = false;
             // 
             // btnupdate
             // 
+            this.btnupdate.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnupdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnupdate.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnupdate.Location = new System.Drawing.Point(314, 110);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(75, 23);
             this.btnupdate.TabIndex = 8;
             this.btnupdate.Text = "Sửa";
-            this.btnupdate.UseVisualStyleBackColor = true;
+            this.btnupdate.UseVisualStyleBackColor = false;
             // 
             // btnsave
             // 
+            this.btnsave.BackColor = System.Drawing.Color.Thistle;
+            this.btnsave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnsave.Location = new System.Drawing.Point(453, 110);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(75, 23);
             this.btnsave.TabIndex = 9;
             this.btnsave.Text = "Lưu";
-            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.UseVisualStyleBackColor = false;
             // 
             // btnhuy
             // 
+            this.btnhuy.BackColor = System.Drawing.Color.Thistle;
+            this.btnhuy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnhuy.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnhuy.Location = new System.Drawing.Point(534, 110);
             this.btnhuy.Name = "btnhuy";
             this.btnhuy.Size = new System.Drawing.Size(75, 23);
             this.btnhuy.TabIndex = 10;
             this.btnhuy.Text = "Hủy";
-            this.btnhuy.UseVisualStyleBackColor = true;
+            this.btnhuy.UseVisualStyleBackColor = false;
             // 
             // search
             // 
@@ -161,6 +179,9 @@ namespace Doan
             // 
             // btnSearch
             // 
+            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnSearch.Location = new System.Drawing.Point(401, 149);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
@@ -218,12 +239,13 @@ namespace Doan
             this.colNgaySinh,
             this.colGioiTinh,
             this.colLop});
+            this.dataGridViewSinhVien.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.dataGridViewSinhVien.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridViewSinhVien.Location = new System.Drawing.Point(0, 177);
+            this.dataGridViewSinhVien.Location = new System.Drawing.Point(0, 201);
             this.dataGridViewSinhVien.Name = "dataGridViewSinhVien";
             this.dataGridViewSinhVien.RowHeadersWidth = 51;
             this.dataGridViewSinhVien.RowTemplate.Height = 24;
-            this.dataGridViewSinhVien.Size = new System.Drawing.Size(804, 348);
+            this.dataGridViewSinhVien.Size = new System.Drawing.Size(802, 348);
             this.dataGridViewSinhVien.TabIndex = 19;
             this.dataGridViewSinhVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -266,7 +288,8 @@ namespace Doan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 525);
+            this.BackColor = System.Drawing.Color.Gold;
+            this.ClientSize = new System.Drawing.Size(802, 549);
             this.Controls.Add(this.dataGridViewSinhVien);
             this.Controls.Add(this.cboGender);
             this.Controls.Add(this.txtLop);
@@ -286,6 +309,7 @@ namespace Doan
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "FrmQuanLySV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Thông Tin Sinh Viên";
