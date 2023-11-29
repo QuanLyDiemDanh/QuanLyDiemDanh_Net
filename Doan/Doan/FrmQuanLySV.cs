@@ -125,7 +125,7 @@ namespace Doan
 
         private void btnupdate_Click(object sender, EventArgs e)
         {
-            string str = "update Students Set HoTen = N'"+txtHoTen.Text+"',NgaySinh ='" + date_NgaySinh.Text+ "',GioiTinh='"+cboGender.Text+ "',Lop='"+txtLop.Text+"' where StudentID ="+txtMaSV.Text+" ";
+            string str = "update Students Set HoTen = N'"+txtHoTen.Text+"',NgaySinh ='" + date_NgaySinh.Text+ "',GioiTinh=N'"+cboGender.Text+ "',Lop='"+txtLop.Text+"' where StudentID ="+txtMaSV.Text+" ";
             int a = db.getNonQuery(str);
             if (a != 0)
             {

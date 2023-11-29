@@ -170,5 +170,26 @@
   <ItemGroup>
     <None Include="Resources\sua1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\huy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\huy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\huy1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xoa11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add3.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
