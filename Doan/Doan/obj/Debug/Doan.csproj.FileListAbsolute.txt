@@ -24,3 +24,4 @@ C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\bin\Debug\
 C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmQuanLySV.resources
 C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmQuanLyTaiKhoanGV.resources
 C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmQuanLyGiangVien.resources
+C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.csproj.AssemblyReference.cache

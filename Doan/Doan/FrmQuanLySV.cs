@@ -19,12 +19,21 @@ namespace Doan
         {
             InitializeComponent();
             LoadGenderOptions();
+            LoadClassOptions();
         }
         private void LoadGenderOptions()
         {
             // Thêm các mục cho ComboBox giới tính
             cboGender.Items.Add("Nam");
             cboGender.Items.Add("Nữ");
+        }
+        private void LoadClassOptions()
+        {
+            cb_class.Items.Add("CNTT1");
+            cb_class.Items.Add("CNTT2");
+            cb_class.Items.Add("CNTT3");
+            cb_class.Items.Add("CNTT4");
+            cb_class.Items.Add("CNTT5");
         }
         private void QuanLyTTSV_Load(object sender, EventArgs e)
         {
@@ -68,12 +77,12 @@ namespace Doan
             txtHoTen.Text = dataGridViewSinhVien.Rows[i].Cells[1].Value.ToString();
             date_NgaySinh.Text = dataGridViewSinhVien.Rows[i].Cells[2].Value.ToString();
             cboGender.Text = dataGridViewSinhVien.Rows[i].Cells[3].Value.ToString();
-            txtLop.Text = dataGridViewSinhVien.Rows[i].Cells[4].Value.ToString();
+            cb_class.Text = dataGridViewSinhVien.Rows[i].Cells[4].Value.ToString();
         }
 
         private void btnthem_Click(object sender, EventArgs e)
         {
-            string str = "insert into Students Values('" + txtMaSV.Text + "',N'" + txtHoTen.Text + "','" + date_NgaySinh.Text + "',N'" + cboGender.Text + "','" + txtLop.Text + "')";
+            string str = "insert into Students Values('" + txtMaSV.Text + "',N'" + txtHoTen.Text + "','" + date_NgaySinh.Text + "',N'" + cboGender.Text + "','" + cb_class.Text + "')";
             int a = db.getNonQuery(str);
             if (a != 0)
             {
@@ -96,7 +105,7 @@ namespace Doan
             txtHoTen.Clear();
             date_NgaySinh.Text = "1/1/1990";
             cboGender.Text = "";
-            txtLop.Clear();
+            cb_class.Text="";
         }
 
         private void date_NgaySinh_ValueChanged(object sender, EventArgs e)
@@ -125,7 +134,7 @@ namespace Doan
 
         private void btnupdate_Click(object sender, EventArgs e)
         {
-            string str = "update Students Set HoTen = N'"+txtHoTen.Text+"',NgaySinh ='" + date_NgaySinh.Text+ "',GioiTinh=N'"+cboGender.Text+ "',Lop='"+txtLop.Text+"' where StudentID ="+txtMaSV.Text+" ";
+            string str = "update Students Set HoTen = N'"+txtHoTen.Text+"',NgaySinh ='" + date_NgaySinh.Text+ "',GioiTinh=N'"+cboGender.Text+ "',Lop='"+cb_class.Text+"' where StudentID ="+txtMaSV.Text+" ";
             int a = db.getNonQuery(str);
             if (a != 0)
             {
@@ -156,5 +165,12 @@ namespace Doan
         {
 
         }
+
+        private void cb_class_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedClass = cb_class.SelectedItem.ToString();
+            dataGridViewSinhVien.DataSource = db.getDataTable("Select * from Students where Lop like N'%" + cb_class.Text + "%'");
+        }
+
     }
 }

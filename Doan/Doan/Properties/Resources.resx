@@ -151,6 +151,9 @@
   <data name="add3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bgrTet21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bgrTet21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="add222" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add222.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -208,7 +211,7 @@
   <data name="khung1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\khung1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bgrTet21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bgrTet21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bgrTet11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bgrTet11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

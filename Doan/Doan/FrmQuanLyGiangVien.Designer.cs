@@ -31,6 +31,10 @@ namespace Doan
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridViewGiangVien = new System.Windows.Forms.DataGridView();
+            this.colMaSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColHoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colGioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_HienThiALL = new System.Windows.Forms.Button();
             this.date_NgaySinh = new System.Windows.Forms.DateTimePicker();
@@ -49,10 +53,6 @@ namespace Doan
             this.btnsave = new System.Windows.Forms.Button();
             this.search = new System.Windows.Forms.Label();
             this.btnhuy = new System.Windows.Forms.Button();
-            this.colMaSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColHoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colGioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGiangVien)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -87,6 +87,44 @@ namespace Doan
             this.dataGridViewGiangVien.Size = new System.Drawing.Size(783, 279);
             this.dataGridViewGiangVien.TabIndex = 19;
             this.dataGridViewGiangVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewGiangVien_CellContentClick);
+            // 
+            // colMaSV
+            // 
+            this.colMaSV.DataPropertyName = "GiangVienID";
+            this.colMaSV.HeaderText = "Mã sinh viên";
+            this.colMaSV.MinimumWidth = 6;
+            this.colMaSV.Name = "colMaSV";
+            this.colMaSV.ReadOnly = true;
+            this.colMaSV.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.colMaSV.Width = 125;
+            // 
+            // ColHoTen
+            // 
+            this.ColHoTen.DataPropertyName = "HoTen";
+            this.ColHoTen.HeaderText = "Họ và Tên";
+            this.ColHoTen.MinimumWidth = 6;
+            this.ColHoTen.Name = "ColHoTen";
+            this.ColHoTen.ReadOnly = true;
+            this.ColHoTen.Width = 175;
+            // 
+            // colNgaySinh
+            // 
+            this.colNgaySinh.DataPropertyName = "NgaySinh";
+            this.colNgaySinh.HeaderText = "Ngày Sinh";
+            this.colNgaySinh.MinimumWidth = 6;
+            this.colNgaySinh.Name = "colNgaySinh";
+            this.colNgaySinh.ReadOnly = true;
+            this.colNgaySinh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colNgaySinh.Width = 150;
+            // 
+            // colGioiTinh
+            // 
+            this.colGioiTinh.DataPropertyName = "GioiTinh";
+            this.colGioiTinh.HeaderText = "Giới tính";
+            this.colGioiTinh.MinimumWidth = 6;
+            this.colGioiTinh.Name = "colGioiTinh";
+            this.colGioiTinh.ReadOnly = true;
+            this.colGioiTinh.Width = 125;
             // 
             // groupBox1
             // 
@@ -317,54 +355,17 @@ namespace Doan
             this.btnhuy.UseVisualStyleBackColor = false;
             this.btnhuy.Click += new System.EventHandler(this.btnhuy_Click);
             // 
-            // colMaSV
-            // 
-            this.colMaSV.DataPropertyName = "GiangVienID";
-            this.colMaSV.HeaderText = "Mã sinh viên";
-            this.colMaSV.MinimumWidth = 6;
-            this.colMaSV.Name = "colMaSV";
-            this.colMaSV.ReadOnly = true;
-            this.colMaSV.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.colMaSV.Width = 125;
-            // 
-            // ColHoTen
-            // 
-            this.ColHoTen.DataPropertyName = "HoTen";
-            this.ColHoTen.HeaderText = "Họ và Tên";
-            this.ColHoTen.MinimumWidth = 6;
-            this.ColHoTen.Name = "ColHoTen";
-            this.ColHoTen.ReadOnly = true;
-            this.ColHoTen.Width = 175;
-            // 
-            // colNgaySinh
-            // 
-            this.colNgaySinh.DataPropertyName = "NgaySinh";
-            this.colNgaySinh.HeaderText = "Ngày Sinh";
-            this.colNgaySinh.MinimumWidth = 6;
-            this.colNgaySinh.Name = "colNgaySinh";
-            this.colNgaySinh.ReadOnly = true;
-            this.colNgaySinh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colNgaySinh.Width = 150;
-            // 
-            // colGioiTinh
-            // 
-            this.colGioiTinh.DataPropertyName = "GioiTinh";
-            this.colGioiTinh.HeaderText = "Giới tính";
-            this.colGioiTinh.MinimumWidth = 6;
-            this.colGioiTinh.Name = "colGioiTinh";
-            this.colGioiTinh.ReadOnly = true;
-            this.colGioiTinh.Width = 125;
-            // 
             // FrmQuanLyGiangVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Doan.Properties.Resources.bgrTet21;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1221, 562);
+            this.ClientSize = new System.Drawing.Size(1213, 562);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmQuanLyGiangVien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Quản Lý Giảng Viên";
             this.Load += new System.EventHandler(this.FrmQuanLyGiangVien_Load);
             this.groupBox2.ResumeLayout(false);
