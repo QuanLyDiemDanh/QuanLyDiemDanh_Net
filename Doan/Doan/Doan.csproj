@@ -65,6 +65,12 @@
     <Compile Include="FrmGiangVien.Designer.cs">
       <DependentUpon>FrmGiangVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmQuanLyGiangVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuanLyGiangVien.Designer.cs">
+      <DependentUpon>FrmQuanLyGiangVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmQuanLyTaiKhoanGV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGiangVien.resx">
       <DependentUpon>FrmGiangVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQuanLyGiangVien.resx">
+      <DependentUpon>FrmQuanLyGiangVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmQuanLyTaiKhoanGV.resx">
       <DependentUpon>FrmQuanLyTaiKhoanGV.cs</DependentUpon>
@@ -199,6 +208,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\add3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgrTet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgrTet2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgrTet1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgrTet21.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

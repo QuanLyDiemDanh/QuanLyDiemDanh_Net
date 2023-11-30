@@ -129,5 +129,20 @@ namespace Doan
                 ActiveChildForm("FrmQuanLyTaiKhoanGV");
             }
         }
+
+        private void tsThemGV_Click(object sender, EventArgs e)
+        {
+            if (!checkExitsForm("FrmQuanLyGiangVien"))
+            {
+                FrmQuanLyGiangVien frm = new FrmQuanLyGiangVien();
+                frm.MdiParent = this;
+                frm.Name = "FrmQuanLyGiangVien";
+                frm.Show();
+            }
+            else
+            {
+                ActiveChildForm("FrmQuanLyGiangVien");
+            }
+        }
     }
 }

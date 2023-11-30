@@ -34,12 +34,12 @@ namespace Doan
             this.quảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsThemGV = new System.Windows.Forms.ToolStripMenuItem();
             this.tsPhanCongGV = new System.Windows.Forms.ToolStripMenuItem();
+            this.quảnLýTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýLớpHọcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.phânCôngGiảngViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tạoVàXemBáoCáoĐiểmDanhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsQuanLySV = new System.Windows.Forms.ToolStripMenuItem();
             this.tsDangXuat = new System.Windows.Forms.ToolStripMenuItem();
-            this.quảnLýTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,12 +75,20 @@ namespace Doan
             this.tsThemGV.Name = "tsThemGV";
             this.tsThemGV.Size = new System.Drawing.Size(262, 26);
             this.tsThemGV.Text = "Thêm,Xóa,Sửa Giảng Viên";
+            this.tsThemGV.Click += new System.EventHandler(this.tsThemGV_Click);
             // 
             // tsPhanCongGV
             // 
             this.tsPhanCongGV.Name = "tsPhanCongGV";
             this.tsPhanCongGV.Size = new System.Drawing.Size(262, 26);
             this.tsPhanCongGV.Text = "Phân công Giảng Viên";
+            // 
+            // quảnLýTàiKhoảnToolStripMenuItem
+            // 
+            this.quảnLýTàiKhoảnToolStripMenuItem.Name = "quảnLýTàiKhoảnToolStripMenuItem";
+            this.quảnLýTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(262, 26);
+            this.quảnLýTàiKhoảnToolStripMenuItem.Text = "Quản Lý Tài Khoản";
+            this.quảnLýTàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.quảnLýTàiKhoảnToolStripMenuItem_Click);
             // 
             // quảnLýLớpHọcToolStripMenuItem
             // 
@@ -120,13 +128,6 @@ namespace Doan
             this.tsDangXuat.Size = new System.Drawing.Size(111, 24);
             this.tsDangXuat.Text = "Đăng xuất";
             this.tsDangXuat.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
-            // 
-            // quảnLýTàiKhoảnToolStripMenuItem
-            // 
-            this.quảnLýTàiKhoảnToolStripMenuItem.Name = "quảnLýTàiKhoảnToolStripMenuItem";
-            this.quảnLýTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(262, 26);
-            this.quảnLýTàiKhoảnToolStripMenuItem.Text = "Quản Lý Tài Khoản";
-            this.quảnLýTàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.quảnLýTàiKhoảnToolStripMenuItem_Click);
             // 
             // FrmAdmin
             // 
