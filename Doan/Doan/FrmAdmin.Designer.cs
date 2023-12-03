@@ -95,8 +95,8 @@ namespace Doan
             // 
             this.quảnLýLớpHọcToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.phânCôngGiảngViênToolStripMenuItem,
-            this.tạoVàXemBáoCáoĐiểmDanhToolStripMenuItem,
-            this.quảnLýLớpHọcToolStripMenuItem1});
+            this.quảnLýLớpHọcToolStripMenuItem1,
+            this.tạoVàXemBáoCáoĐiểmDanhToolStripMenuItem});
             this.quảnLýLớpHọcToolStripMenuItem.Image = global::Doan.Properties.Resources.blue;
             this.quảnLýLớpHọcToolStripMenuItem.Name = "quảnLýLớpHọcToolStripMenuItem";
             this.quảnLýLớpHọcToolStripMenuItem.Size = new System.Drawing.Size(219, 24);

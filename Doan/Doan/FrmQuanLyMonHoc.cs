@@ -15,7 +15,6 @@ namespace Doan
     {
         string connectstring = @"Data Source=LAPTOP-GGGJGJI6\SQLBYDAU;Initial Catalog=QuanLyDiemDanh;Integrated Security=True";
         SqlConnection connection;
-        SqlDataAdapter adapter;
         DataTable dt = new DataTable();
 
         public FrmQuanLyMonHoc()
@@ -42,26 +41,13 @@ namespace Doan
         private void FrmQuanLyLopVaMonHoc_Load(object sender, EventArgs e)
         {
             ketnoicsdl();
+            btn_xoa.Click += btn_xoa_Click_1;
+            btn_sua.Click += btn_sua_Click_1;
+            btn_reset.Click += btn_reset_Click_1;
+
         }
 
-        private void btn_load_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                connection.Open();
-                SqlCommand command = new SqlCommand("select * from Courses", connection);
-                adapter = new SqlDataAdapter(command);
-                adapter.Fill(dt);
-                dataGridView1.DataSource = dt;
-                connection.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-        }
-
-        private void btn_them_Click(object sender, EventArgs e)
+        private void btn_them_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -96,102 +82,180 @@ namespace Doan
                 txt_idMH.Text = "";
                 txt_tenMH.Text = "";
                 txt_idGV.Text = "";
+
+                // Lưu trữ dữ liệu hiện tại vào biến tạm thời
+                tempData = (DataTable)dataGridView1.DataSource;
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show("Error: " + ex.Message);
+                MessageBox.Show("Đã thêm thành công . Vui lòng khởi chạy lại hoặc nhấn nút 'Reset để xem lại kết quả'" );
             }
         }
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
+        }
+
+        
+        private void btn_xoa_Click_1(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                try
+                {
+                    // Lấy giá trị của cột khóa chính từ dòng được chọn
+                    string courseID = dataGridView1.SelectedRows[0].Cells["CourseID"].Value.ToString();
+
+                    // Mở kết nối
+                    connection.Open();
+
+                    // Tạo một đối tượng SqlCommand để thực thi truy vấn DELETE
+                    SqlCommand command = new SqlCommand("DELETE FROM Courses WHERE CourseID = @CourseID", connection);
+                    command.Parameters.AddWithValue("@CourseID", courseID);
+
+                    // Thực thi truy vấn DELETE
+                    command.ExecuteNonQuery();
+
+                    // Đóng kết nối
+                    connection.Close();
+
+                    // Xóa dòng được chọn từ DataTable
+                    DataRow rowToDelete = dt.Select("CourseID = '" + courseID + "'").FirstOrDefault();
+                    if (rowToDelete != null)
+                        dt.Rows.Remove(rowToDelete);
+
+                    // Cập nhật lại DataSource của DataGridView
+                    dataGridView1.DataSource = dt;
+
+                    // Lưu trữ dữ liệu hiện tại vào biến tạm thời
+                    tempData = (DataTable)dataGridView1.DataSource;
+                }
+                catch
+                {
+                    MessageBox.Show("Đã xóa thành công . Vui lòng khởi chạy lại hoặc nhấn nút 'Reset để xem lại kết quả' ");
+                }
+            }
 
         }
+
+        private void btn_sua_Click_1(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                try
+                {
+                    // Lấy giá trị của cột khóa chính từ dòng được chọn
+                    string courseID = dataGridView1.SelectedRows[0].Cells["CourseID"].Value.ToString();
+
+                    // Lấy dữ liệu từ các trường dữ liệu
+                    string tenMonHoc = txt_tenMH.Text;
+                    string giangVienID = txt_idGV.Text;
+
+                    // Mở kết nối
+                    connection.Open();
+
+                    // Tạo một đối tượng SqlCommand để thực thi truy vấn UPDATE
+                    SqlCommand command = new SqlCommand("UPDATE Courses SET TenMonHoc = @TenMonHoc, GiangVienID = @GiangVienID WHERE CourseID = @CourseID", connection);
+                    command.Parameters.AddWithValue("@CourseID", courseID);
+                    command.Parameters.AddWithValue("@TenMonHoc", tenMonHoc);
+                    command.Parameters.AddWithValue("@GiangVienID", giangVienID);
+
+                    // Thực thi truy vấn UPDATE
+                    command.ExecuteNonQuery();
+
+                    // Đóng kết nối
+                    connection.Close();
+
+                    // Cập nhật lại dữ liệu trong DataTable
+                    DataRow rowToUpdate = dt.Select("CourseID = '" + courseID + "'").FirstOrDefault();
+                    if (rowToUpdate != null)
+                    {
+                        rowToUpdate["TenMonHoc"] = tenMonHoc;
+                        rowToUpdate["GiangVienID"] = giangVienID;
+                    }
+
+                    // Cập nhật lại DataSource của DataGridView
+                    dataGridView1.DataSource = dt;
+
+                    // Xóa nội dung trong TextBox
+                    txt_idMH.Text = "";
+                    txt_tenMH.Text = "";
+                    txt_idGV.Text = "";
+
+                    // Lưu trữ dữ liệu hiện tại vào biến tạm thời
+                    tempData = (DataTable)dataGridView1.DataSource;
+                }
+                catch
+                {
+                    MessageBox.Show("Đã sửa thành công . Vui lòng khởi chạy lại hoặc nhấn nút 'Reset để xem lại kết quả' ");
+                }
+            }
+        }
+        DataTable tempData;
+        private void btn_reset_Click_1(object sender, EventArgs e)
+        {
+            // Lưu trữ dữ liệu hiện tại vào biến tạm thời
+            //tempData = (DataTable)dataGridView1.DataSource; 
+
+            // Tạo một DataTable mới để lưu trữ cả dữ liệu cũ và dữ liệu mới
+            DataTable newData = new DataTable();
+
+            // Kiểm tra nếu có dữ liệu hiện tại trong DataGridView
+            if (dataGridView1.DataSource != null)
+            {
+                // Lưu trữ dữ liệu hiện tại vào biến tạm thời
+                tempData = dataGridView1.DataSource as DataTable;
+
+                // Sao chép cấu trúc cột từ dữ liệu hiện tại vào DataTable mới
+                newData = tempData.Clone();
+
+                // Sao chép dữ liệu từ dữ liệu hiện tại vào DataTable mới
+                foreach (DataRow row in tempData.Rows)
+                {
+                    newData.ImportRow(row);
+                }
+            }
+            else
+            {
+                // Nếu không có dữ liệu hiện tại, đặt tempData thành null
+                tempData = null;
+            }
+
+            // Xóa nội dung trong TextBox
+            txt_idMH.Text = "";
+            txt_tenMH.Text = "";
+            txt_idGV.Text = "";
+
+            // Đặt lại DataSource của DataGridView
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = dt;
+
+            // Đặt DataGridView về tình trạng mới
+            dataGridView1.AllowUserToAddRows = true;
+            dataGridView1.AllowUserToDeleteRows = true;
+            dataGridView1.ReadOnly = true;
+
+            // Khôi phục dữ liệu từ biến tạm thời vào DataGridView
+            dataGridView1.DataSource = newData;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmQuanLyMonHoc_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'quanLyDiemDanhDataSet.Courses' table. You can move, or remove it, as needed.
+            this.coursesTableAdapter.Fill(this.quanLyDiemDanhDataSet.Courses);
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
-//using System;
-//using System.Collections.Generic;
-//using System.ComponentModel;
-//using System.Data;
-//using System.Drawing;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
-//using System.Windows.Forms;
-//using System.Data.SqlClient;
 
-//namespace Doan
-//{
-//    public partial class FrmQuanLyMonHoc : Form
-//    {
-//        string connectstring = @"Data Source=LAPTOP-GGGJGJI6\SQLBYDAU;Initial Catalog=QuanLyDiemDanh;Integrated Security=True";
-//        SqlConnection connection;
-//        SqlCommand command;
-//        SqlDataAdapter adapter;
-//        DataTable dt = new DataTable();
-
-//        public FrmQuanLyMonHoc()
-//        {
-//            InitializeComponent();
-//        }
-
-//        private void FrmQuanLyLopVaMonHoc_Load(object sender, EventArgs e)
-//        {
-//            // TODO: This line of code loads data into the 'quanLyDiemDanhDataSet3.Courses' table. You can move, or remove it, as needed.
-//            this.coursesTableAdapter3.Fill(this.quanLyDiemDanhDataSet3.Courses);
-//            // TODO: This line of code loads data into the 'quanLyDiemDanhDataSet2.Courses' table. You can move, or remove it, as needed.
-//            this.coursesTableAdapter2.Fill(this.quanLyDiemDanhDataSet2.Courses);
-//            // TODO: This line of code loads data into the 'quanLyDiemDanhDataSet1.Courses' table. You can move, or remove it, as needed.
-//            this.coursesTableAdapter1.Fill(this.quanLyDiemDanhDataSet1.Courses);
-//            // TODO: This line of code loads data into the 'quanLyDiemDanhDataSet.Courses' table. You can move, or remove it, as needed.
-//            this.coursesTableAdapter.Fill(this.quanLyDiemDanhDataSet.Courses);
-//            // TODO: This line of code loads data into the 'quanLyDiemDanhDataSet.Classes' table. You can move, or remove it, as needed.
-//            this.classesTableAdapter.Fill(this.quanLyDiemDanhDataSet.Classes);
-//            connection = new SqlConnection(connectstring);
-//        }
-
-//        private void btn_load_Click(object sender, EventArgs e)
-//        {
-//            try
-//            {
-//                connection.Open();
-//                command = new SqlCommand("select * from Courses", connection);
-//                adapter = new SqlDataAdapter(command);
-//                adapter.Fill(dt);
-//                dataGridView1.DataSource = dt;
-//                connection.Close();
-//            }
-//            catch
-//            {
-
-//            }
-//        }
-
-//        private void btn_them_Click(object sender, EventArgs e)
-//        {
-//            string courseID = txt_idMH.Text;
-//            string tenMonHoc = txt_tenMH.Text;
-//            string giangVienID = txt_idGV.Text;
-
-//            // Lấy đối tượng BindingSource từ nguồn dữ liệu của DataGridView
-//            var bindingSource = (BindingSource)dataGridView1.DataSource;
-
-//            // Lấy đối tượng DataSet từ nguồn dữ liệu gốc của BindingSource
-//            Doan.QuanLyDiemDanhDataSet3 dataSet = (Doan.QuanLyDiemDanhDataSet3)bindingSource.DataSource;
-
-//            // Tạo một hàng mới
-//            DataRow newRow = dt.NewRow();
-
-//            // Thêm hàng mới vào DataTable
-//            dt.Rows.Add(newRow);
-
-//            // Cập nhật lại nguồn dữ liệu của DataGridView
-//            dataGridView1.DataSource = dt;
-//        }
-
-//        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-//        {
-
-//        }
-//    }
-//}

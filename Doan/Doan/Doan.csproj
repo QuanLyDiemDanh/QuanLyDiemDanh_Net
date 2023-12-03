@@ -106,21 +106,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyDiemDanhDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyDiemDanhDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QuanLyDiemDanhDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="QuanLyDiemDanhDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QuanLyDiemDanhDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="QuanLyDiemDanhDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QuanLyDiemDanhDataSet3.xsd</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="FrmAdmin.resx">
       <DependentUpon>FrmAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,39 +156,6 @@
     </None>
     <None Include="QuanLyDiemDanhDataSet.xss">
       <DependentUpon>QuanLyDiemDanhDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="QuanLyDiemDanhDataSet1.xsc">
-      <DependentUpon>QuanLyDiemDanhDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="QuanLyDiemDanhDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QuanLyDiemDanhDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QuanLyDiemDanhDataSet1.xss">
-      <DependentUpon>QuanLyDiemDanhDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="QuanLyDiemDanhDataSet2.xsc">
-      <DependentUpon>QuanLyDiemDanhDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="QuanLyDiemDanhDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QuanLyDiemDanhDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QuanLyDiemDanhDataSet2.xss">
-      <DependentUpon>QuanLyDiemDanhDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="QuanLyDiemDanhDataSet3.xsc">
-      <DependentUpon>QuanLyDiemDanhDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="QuanLyDiemDanhDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QuanLyDiemDanhDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QuanLyDiemDanhDataSet3.xss">
-      <DependentUpon>QuanLyDiemDanhDataSet3.xsd</DependentUpon>
     </None>
     <None Include="Resources\background-tet-nguyen-dan-27.webp" />
   </ItemGroup>
