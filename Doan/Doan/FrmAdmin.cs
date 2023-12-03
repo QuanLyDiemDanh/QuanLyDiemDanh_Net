@@ -29,7 +29,17 @@ namespace Doan
 
         private void phânCôngGiảngViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (!checkExitsForm("FrmQuanLyMonHoc"))
+            {
+                FrmQuanLyMonHoc frm = new FrmQuanLyMonHoc();
+                frm.MdiParent = this;
+                frm.Name = "FrmQuanLyMonHoc";
+                frm.Show();
+            }
+            else
+            {
+                ActiveChildForm("FrmQuanLyMonHoc");
+            }
         }
 
         private void quảnLýTàiKhoảnSinhVienToolStripMenuItem_Click(object sender, EventArgs e)
@@ -143,6 +153,16 @@ namespace Doan
             {
                 ActiveChildForm("FrmQuanLyGiangVien");
             }
+        }
+
+        private void quảnLýLớpHọcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tạoVàXemBáoCáoĐiểmDanhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

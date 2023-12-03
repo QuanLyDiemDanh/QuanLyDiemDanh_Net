@@ -25,3 +25,19 @@ C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\
 C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmQuanLyTaiKhoanGV.resources
 C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmQuanLyGiangVien.resources
 C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.csproj.AssemblyReference.cache
+C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh_Net\Doan\Doan\bin\Debug\Doan.exe.config
+C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh_Net\Doan\Doan\bin\Debug\Doan.exe
+C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh_Net\Doan\Doan\bin\Debug\Doan.pdb
+C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.csproj.AssemblyReference.cache
+C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmAdmin.resources
+C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmDangNhap.resources
+C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmGiangVien.resources
+C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmQuanLyGiangVien.resources
+C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmQuanLyTaiKhoanGV.resources
+C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.Properties.Resources.resources
+C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmQuanLySV.resources
+C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.csproj.GenerateResource.cache
+C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.csproj.CoreCompileInputs.cache
+C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.exe
+C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.pdb
+C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmQuanLyMonHoc.resources
