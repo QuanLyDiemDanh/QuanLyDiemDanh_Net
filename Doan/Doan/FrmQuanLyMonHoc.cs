@@ -83,8 +83,6 @@ namespace Doan
                 txt_tenMH.Text = "";
                 txt_idGV.Text = "";
 
-                // Lưu trữ dữ liệu hiện tại vào biến tạm thời
-                tempData = (DataTable)dataGridView1.DataSource;
             }
             catch
             {

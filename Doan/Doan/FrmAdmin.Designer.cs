@@ -37,10 +37,10 @@ namespace Doan
             this.quảnLýTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýLớpHọcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.phânCôngGiảngViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quảnLýLớpHọcToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tạoVàXemBáoCáoĐiểmDanhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsQuanLySV = new System.Windows.Forms.ToolStripMenuItem();
             this.tsDangXuat = new System.Windows.Forms.ToolStripMenuItem();
-            this.quảnLýLớpHọcToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -110,6 +110,13 @@ namespace Doan
             this.phânCôngGiảngViênToolStripMenuItem.Text = "Quản Lý Môn Học";
             this.phânCôngGiảngViênToolStripMenuItem.Click += new System.EventHandler(this.phânCôngGiảngViênToolStripMenuItem_Click);
             // 
+            // quảnLýLớpHọcToolStripMenuItem1
+            // 
+            this.quảnLýLớpHọcToolStripMenuItem1.Name = "quảnLýLớpHọcToolStripMenuItem1";
+            this.quảnLýLớpHọcToolStripMenuItem1.Size = new System.Drawing.Size(301, 26);
+            this.quảnLýLớpHọcToolStripMenuItem1.Text = "Quản Lý Lớp Học";
+            this.quảnLýLớpHọcToolStripMenuItem1.Click += new System.EventHandler(this.quảnLýLớpHọcToolStripMenuItem1_Click);
+            // 
             // tạoVàXemBáoCáoĐiểmDanhToolStripMenuItem
             // 
             this.tạoVàXemBáoCáoĐiểmDanhToolStripMenuItem.Name = "tạoVàXemBáoCáoĐiểmDanhToolStripMenuItem";
@@ -132,12 +139,6 @@ namespace Doan
             this.tsDangXuat.Size = new System.Drawing.Size(111, 24);
             this.tsDangXuat.Text = "Đăng xuất";
             this.tsDangXuat.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
-            // 
-            // quảnLýLớpHọcToolStripMenuItem1
-            // 
-            this.quảnLýLớpHọcToolStripMenuItem1.Name = "quảnLýLớpHọcToolStripMenuItem1";
-            this.quảnLýLớpHọcToolStripMenuItem1.Size = new System.Drawing.Size(301, 26);
-            this.quảnLýLớpHọcToolStripMenuItem1.Text = "Quản Lý Lớp Học";
             // 
             // FrmAdmin
             // 

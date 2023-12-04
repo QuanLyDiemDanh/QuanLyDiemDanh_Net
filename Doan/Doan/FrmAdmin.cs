@@ -164,5 +164,20 @@ namespace Doan
         {
 
         }
+
+        private void quảnLýLớpHọcToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (!checkExitsForm("FrmQuanLyLop"))
+            {
+                FrmQuanLyLop frm = new FrmQuanLyLop();
+                frm.MdiParent = this;
+                frm.Name = "FrmQuanLyLop";
+                frm.Show();
+            }
+            else
+            {
+                ActiveChildForm("FrmQuanLyLop");
+            }
+        }
     }
 }

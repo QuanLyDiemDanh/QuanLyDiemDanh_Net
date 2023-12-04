@@ -41,3 +41,4 @@ C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh
 C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.exe
 C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.pdb
 C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmQuanLyMonHoc.resources
+C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmQuanLyLop.resources
