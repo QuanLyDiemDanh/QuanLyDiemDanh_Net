@@ -8,10 +8,10 @@ namespace Doan.Models
 {
     class Classes
     {
-        public string maLop { get; set; }
-        public DateTime ngayHoc { get; set; }
-        public string idMH { get; set; }
-        public TimeSpan gioBatDau { get; set; }
-        public TimeSpan gioKetThuc { get; set; }
+        public int ClassID { get; set; }
+        public TimeSpan ThoiGianBatDau { get; set; }
+        public TimeSpan ThoiGianKetThuc { get; set; }
+        public int CourseID { get; set; }
+        public DateTime NgayHoc { get; set; }
     }
 }
