@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace Doan
 {
     partial class FrmAdmin
@@ -150,6 +152,11 @@ namespace Doan
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void QuảnLýLớpHọcToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

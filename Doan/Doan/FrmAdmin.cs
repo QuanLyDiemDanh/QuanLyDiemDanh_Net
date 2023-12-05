@@ -162,7 +162,20 @@ namespace Doan
 
         private void tạoVàXemBáoCáoĐiểmDanhToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (this != null) // Kiểm tra xem đối tượng 'this' có khác null không
+            {
+                if (!checkExitsForm("FrmDiemDanh"))
+                {
+                    FrmDiemDanh frm = new FrmDiemDanh();
+                    frm.MdiParent = this;
+                    frm.Name = "FrmDiemDanh";
+                    frm.Show();
+                }
+                else
+                {
+                    ActiveChildForm("FrmDiemDanh");
+                }
+            }
         }
 
         private void quảnLýLớpHọcToolStripMenuItem1_Click(object sender, EventArgs e)

@@ -33,7 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -58,6 +60,12 @@
     </Compile>
     <Compile Include="FrmDangNhap.Designer.cs">
       <DependentUpon>FrmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDiemDanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDiemDanh.Designer.cs">
+      <DependentUpon>FrmDiemDanh.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmGiangVien.cs">
       <SubType>Form</SubType>
@@ -122,11 +130,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyDiemDanhDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyDiemDanhDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyDiemDanhDataSet4.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmAdmin.resx">
       <DependentUpon>FrmAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDangNhap.resx">
       <DependentUpon>FrmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDiemDanh.resx">
+      <DependentUpon>FrmDiemDanh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGiangVien.resx">
       <DependentUpon>FrmGiangVien.cs</DependentUpon>
@@ -208,6 +224,17 @@
     </None>
     <None Include="QuanLyDiemDanhDataSet3.xss">
       <DependentUpon>QuanLyDiemDanhDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyDiemDanhDataSet4.xsc">
+      <DependentUpon>QuanLyDiemDanhDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyDiemDanhDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyDiemDanhDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyDiemDanhDataSet4.xss">
+      <DependentUpon>QuanLyDiemDanhDataSet4.xsd</DependentUpon>
     </None>
     <None Include="Resources\background-tet-nguyen-dan-27.webp" />
   </ItemGroup>
