@@ -33,7 +33,6 @@ namespace Doan
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.quảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsThemGV = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsPhanCongGV = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýLớpHọcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.phânCôngGiảngViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -63,7 +62,6 @@ namespace Doan
             // 
             this.quảnToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsThemGV,
-            this.tsPhanCongGV,
             this.quảnLýTàiKhoảnToolStripMenuItem});
             this.quảnToolStripMenuItem.Image = global::Doan.Properties.Resources.green;
             this.quảnToolStripMenuItem.Name = "quảnToolStripMenuItem";
@@ -77,12 +75,6 @@ namespace Doan
             this.tsThemGV.Size = new System.Drawing.Size(262, 26);
             this.tsThemGV.Text = "Thêm,Xóa,Sửa Giảng Viên";
             this.tsThemGV.Click += new System.EventHandler(this.tsThemGV_Click);
-            // 
-            // tsPhanCongGV
-            // 
-            this.tsPhanCongGV.Name = "tsPhanCongGV";
-            this.tsPhanCongGV.Size = new System.Drawing.Size(262, 26);
-            this.tsPhanCongGV.Text = "Phân công Giảng Viên";
             // 
             // quảnLýTàiKhoảnToolStripMenuItem
             // 
@@ -165,7 +157,6 @@ namespace Doan
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem quảnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tsThemGV;
-        private System.Windows.Forms.ToolStripMenuItem tsPhanCongGV;
         private System.Windows.Forms.ToolStripMenuItem quảnLýLớpHọcToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem phânCôngGiảngViênToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tạoVàXemBáoCáoĐiểmDanhToolStripMenuItem;

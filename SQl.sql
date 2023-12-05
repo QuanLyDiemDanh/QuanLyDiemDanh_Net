@@ -1,6 +1,14 @@
-﻿ALTER TABLE Attendance
-ADD CONSTRAINT FK_Attendance_Classes_ClassID FOREIGN KEY (ClassID) REFERENCES Classes(ClassID);
-
--- Thêm khóa ngoại vào bảng Classes
-ALTER TABLE Classes
-ADD CONSTRAINT FK_Classes_Course FOREIGN KEY (CourseID) REFERENCES Courses(CourseID);
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER TRIGGER [dbo].[AddGiangVienTrigger]
+ON [dbo].[GiangVien]
+AFTER INSERT
+AS
+BEGIN
+    -- Insert into TaiKhoanGV with default values
+    INSERT INTO TaiKhoanGV (GiangVienID, PassGV)
+    SELECT GiangVienID, REPLACE(NgaySinh, '/', '') -- Remove '/' from NgaySinh
+    FROM inserted;
+END;
