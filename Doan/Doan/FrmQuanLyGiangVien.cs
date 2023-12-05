@@ -17,8 +17,14 @@ namespace Doan
         public FrmQuanLyGiangVien()
         {
             InitializeComponent();
+            LoadGenderOptions();
         }
-
+        private void LoadGenderOptions()
+        {
+            // Thêm các mục cho ComboBox giới tính
+            cboGender.Items.Add("Nam");
+            cboGender.Items.Add("Nữ");
+        }
         private void FrmQuanLyGiangVien_Load(object sender, EventArgs e)
         {
             loadData();
