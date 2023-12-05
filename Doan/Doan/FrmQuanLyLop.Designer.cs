@@ -71,11 +71,11 @@ namespace Doan
             // lb_QLL
             // 
             this.lb_QLL.AutoSize = true;
-            this.lb_QLL.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_QLL.Location = new System.Drawing.Point(402, 45);
+            this.lb_QLL.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_QLL.Location = new System.Drawing.Point(370, 42);
             this.lb_QLL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_QLL.Name = "lb_QLL";
-            this.lb_QLL.Size = new System.Drawing.Size(175, 26);
+            this.lb_QLL.Size = new System.Drawing.Size(217, 35);
             this.lb_QLL.TabIndex = 0;
             this.lb_QLL.Text = "Quản lý lớp học";
             this.lb_QLL.Click += new System.EventHandler(this.lb_QLL_Click);
@@ -164,6 +164,7 @@ namespace Doan
             // 
             // dataGridView_Class
             // 
+            this.dataGridView_Class.BackgroundColor = System.Drawing.Color.PapayaWhip;
             this.dataGridView_Class.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Class.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ClassID,
@@ -171,12 +172,13 @@ namespace Doan
             this.ThoiGianBatDau,
             this.ThoiGianKetThuc,
             this.CourseID});
-            this.dataGridView_Class.Location = new System.Drawing.Point(13, 346);
+            this.dataGridView_Class.GridColor = System.Drawing.Color.PeachPuff;
+            this.dataGridView_Class.Location = new System.Drawing.Point(102, 346);
             this.dataGridView_Class.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView_Class.Name = "dataGridView_Class";
             this.dataGridView_Class.RowHeadersWidth = 51;
             this.dataGridView_Class.RowTemplate.Height = 24;
-            this.dataGridView_Class.Size = new System.Drawing.Size(924, 260);
+            this.dataGridView_Class.Size = new System.Drawing.Size(775, 260);
             this.dataGridView_Class.TabIndex = 12;
             this.dataGridView_Class.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -335,6 +337,7 @@ namespace Doan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Doan.Properties.Resources.tet3;
             this.ClientSize = new System.Drawing.Size(961, 619);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);

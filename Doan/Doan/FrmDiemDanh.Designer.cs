@@ -32,15 +32,15 @@ namespace Doan
             this.components = new System.ComponentModel.Container();
             this.btn_xem = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.quanLyDiemDanhDataSet4 = new Doan.QuanLyDiemDanhDataSet4();
-            this.studentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.studentsTableAdapter = new Doan.QuanLyDiemDanhDataSet4TableAdapters.StudentsTableAdapter();
             this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Lop = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CoMat = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.quanLyDiemDanhDataSet4 = new Doan.QuanLyDiemDanhDataSet4();
+            this.studentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.studentsTableAdapter = new Doan.QuanLyDiemDanhDataSet4TableAdapters.StudentsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyDiemDanhDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).BeginInit();
@@ -49,7 +49,8 @@ namespace Doan
             // btn_xem
             // 
             this.btn_xem.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xem.Location = new System.Drawing.Point(335, 28);
+            this.btn_xem.Image = global::Doan.Properties.Resources.cooldownpink;
+            this.btn_xem.Location = new System.Drawing.Point(375, 27);
             this.btn_xem.Name = "btn_xem";
             this.btn_xem.Size = new System.Drawing.Size(340, 72);
             this.btn_xem.TabIndex = 1;
@@ -59,6 +60,7 @@ namespace Doan
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.PeachPuff;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.StudentID,
@@ -73,20 +75,6 @@ namespace Doan
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1065, 321);
             this.dataGridView1.TabIndex = 2;
-            // 
-            // quanLyDiemDanhDataSet4
-            // 
-            this.quanLyDiemDanhDataSet4.DataSetName = "QuanLyDiemDanhDataSet4";
-            this.quanLyDiemDanhDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // studentsBindingSource
-            // 
-            this.studentsBindingSource.DataMember = "Students";
-            this.studentsBindingSource.DataSource = this.quanLyDiemDanhDataSet4;
-            // 
-            // studentsTableAdapter
-            // 
-            this.studentsTableAdapter.ClearBeforeFill = true;
             // 
             // StudentID
             // 
@@ -138,10 +126,25 @@ namespace Doan
             this.CoMat.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.CoMat.Width = 125;
             // 
+            // quanLyDiemDanhDataSet4
+            // 
+            this.quanLyDiemDanhDataSet4.DataSetName = "QuanLyDiemDanhDataSet4";
+            this.quanLyDiemDanhDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // studentsBindingSource
+            // 
+            this.studentsBindingSource.DataMember = "Students";
+            this.studentsBindingSource.DataSource = this.quanLyDiemDanhDataSet4;
+            // 
+            // studentsTableAdapter
+            // 
+            this.studentsTableAdapter.ClearBeforeFill = true;
+            // 
             // FrmDiemDanh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Doan.Properties.Resources.tet2;
             this.ClientSize = new System.Drawing.Size(1130, 509);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_xem);

@@ -33,11 +33,11 @@ namespace Doan
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txt_idGV = new System.Windows.Forms.TextBox();
-            this.txt_tenMH = new System.Windows.Forms.TextBox();
             this.txt_idMH = new System.Windows.Forms.TextBox();
-            this.lb_id = new System.Windows.Forms.Label();
-            this.lb_TenMonHoc = new System.Windows.Forms.Label();
             this.lb_IDGV = new System.Windows.Forms.Label();
+            this.txt_tenMH = new System.Windows.Forms.TextBox();
+            this.lb_TenMonHoc = new System.Windows.Forms.Label();
+            this.lb_id = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.btn_them = new System.Windows.Forms.Button();
             this.btn_xoa = new System.Windows.Forms.Button();
@@ -63,94 +63,99 @@ namespace Doan
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(176, 22);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Image = global::Doan.Properties.Resources.cooldownpink;
+            this.label1.Location = new System.Drawing.Point(356, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 26);
+            this.label1.Size = new System.Drawing.Size(267, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Quản lý môn học";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // groupBox4
             // 
+            this.groupBox4.BackColor = System.Drawing.Color.LightCoral;
             this.groupBox4.Controls.Add(this.txt_idGV);
-            this.groupBox4.Controls.Add(this.txt_tenMH);
             this.groupBox4.Controls.Add(this.txt_idMH);
-            this.groupBox4.Controls.Add(this.lb_id);
-            this.groupBox4.Controls.Add(this.lb_TenMonHoc);
             this.groupBox4.Controls.Add(this.lb_IDGV);
-            this.groupBox4.Location = new System.Drawing.Point(69, 66);
+            this.groupBox4.Controls.Add(this.txt_tenMH);
+            this.groupBox4.Controls.Add(this.lb_TenMonHoc);
+            this.groupBox4.Controls.Add(this.lb_id);
+            this.groupBox4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(179, 84);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(260, 166);
+            this.groupBox4.Size = new System.Drawing.Size(317, 166);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Nhập thông tin";
+            this.groupBox4.Text = "NHẬP THÔNG TIN ";
             // 
             // txt_idGV
             // 
-            this.txt_idGV.Location = new System.Drawing.Point(121, 110);
+            this.txt_idGV.Location = new System.Drawing.Point(145, 113);
             this.txt_idGV.Name = "txt_idGV";
-            this.txt_idGV.Size = new System.Drawing.Size(100, 22);
+            this.txt_idGV.Size = new System.Drawing.Size(149, 27);
             this.txt_idGV.TabIndex = 9;
-            // 
-            // txt_tenMH
-            // 
-            this.txt_tenMH.Location = new System.Drawing.Point(121, 71);
-            this.txt_tenMH.Name = "txt_tenMH";
-            this.txt_tenMH.Size = new System.Drawing.Size(100, 22);
-            this.txt_tenMH.TabIndex = 8;
             // 
             // txt_idMH
             // 
-            this.txt_idMH.Location = new System.Drawing.Point(121, 37);
+            this.txt_idMH.Location = new System.Drawing.Point(145, 40);
             this.txt_idMH.Name = "txt_idMH";
-            this.txt_idMH.Size = new System.Drawing.Size(100, 22);
+            this.txt_idMH.Size = new System.Drawing.Size(149, 27);
             this.txt_idMH.TabIndex = 7;
-            // 
-            // lb_id
-            // 
-            this.lb_id.AutoSize = true;
-            this.lb_id.Location = new System.Drawing.Point(16, 40);
-            this.lb_id.Name = "lb_id";
-            this.lb_id.Size = new System.Drawing.Size(93, 17);
-            this.lb_id.TabIndex = 6;
-            this.lb_id.Text = "Mã môn học :";
-            // 
-            // lb_TenMonHoc
-            // 
-            this.lb_TenMonHoc.AutoSize = true;
-            this.lb_TenMonHoc.Location = new System.Drawing.Point(16, 76);
-            this.lb_TenMonHoc.Name = "lb_TenMonHoc";
-            this.lb_TenMonHoc.Size = new System.Drawing.Size(99, 17);
-            this.lb_TenMonHoc.TabIndex = 4;
-            this.lb_TenMonHoc.Text = "Tên môn học :";
             // 
             // lb_IDGV
             // 
             this.lb_IDGV.AutoSize = true;
-            this.lb_IDGV.Location = new System.Drawing.Point(17, 113);
+            this.lb_IDGV.Location = new System.Drawing.Point(22, 116);
             this.lb_IDGV.Name = "lb_IDGV";
-            this.lb_IDGV.Size = new System.Drawing.Size(98, 17);
+            this.lb_IDGV.Size = new System.Drawing.Size(117, 19);
             this.lb_IDGV.TabIndex = 5;
             this.lb_IDGV.Text = "ID giảng viên :";
             // 
+            // txt_tenMH
+            // 
+            this.txt_tenMH.Location = new System.Drawing.Point(145, 73);
+            this.txt_tenMH.Name = "txt_tenMH";
+            this.txt_tenMH.Size = new System.Drawing.Size(149, 27);
+            this.txt_tenMH.TabIndex = 8;
+            // 
+            // lb_TenMonHoc
+            // 
+            this.lb_TenMonHoc.AutoSize = true;
+            this.lb_TenMonHoc.Location = new System.Drawing.Point(21, 79);
+            this.lb_TenMonHoc.Name = "lb_TenMonHoc";
+            this.lb_TenMonHoc.Size = new System.Drawing.Size(112, 19);
+            this.lb_TenMonHoc.TabIndex = 4;
+            this.lb_TenMonHoc.Text = "Tên môn học :";
+            // 
+            // lb_id
+            // 
+            this.lb_id.AutoSize = true;
+            this.lb_id.Location = new System.Drawing.Point(21, 43);
+            this.lb_id.Name = "lb_id";
+            this.lb_id.Size = new System.Drawing.Size(109, 19);
+            this.lb_id.TabIndex = 6;
+            this.lb_id.Text = "Mã môn học :";
+            // 
             // groupBox5
             // 
+            this.groupBox5.BackColor = System.Drawing.Color.LightCoral;
             this.groupBox5.Controls.Add(this.btn_them);
             this.groupBox5.Controls.Add(this.btn_xoa);
             this.groupBox5.Controls.Add(this.btn_sua);
             this.groupBox5.Controls.Add(this.btn_reset);
-            this.groupBox5.Location = new System.Drawing.Point(375, 66);
+            this.groupBox5.Location = new System.Drawing.Point(520, 84);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(120, 148);
+            this.groupBox5.Size = new System.Drawing.Size(254, 166);
             this.groupBox5.TabIndex = 2;
             this.groupBox5.TabStop = false;
             // 
             // btn_them
             // 
-            this.btn_them.Location = new System.Drawing.Point(24, 21);
+            this.btn_them.Location = new System.Drawing.Point(35, 40);
             this.btn_them.Name = "btn_them";
-            this.btn_them.Size = new System.Drawing.Size(75, 23);
+            this.btn_them.Size = new System.Drawing.Size(81, 41);
             this.btn_them.TabIndex = 10;
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = true;
@@ -158,9 +163,9 @@ namespace Doan
             // 
             // btn_xoa
             // 
-            this.btn_xoa.Location = new System.Drawing.Point(24, 50);
+            this.btn_xoa.Location = new System.Drawing.Point(35, 97);
             this.btn_xoa.Name = "btn_xoa";
-            this.btn_xoa.Size = new System.Drawing.Size(75, 23);
+            this.btn_xoa.Size = new System.Drawing.Size(81, 41);
             this.btn_xoa.TabIndex = 11;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.UseVisualStyleBackColor = true;
@@ -168,9 +173,9 @@ namespace Doan
             // 
             // btn_sua
             // 
-            this.btn_sua.Location = new System.Drawing.Point(24, 79);
+            this.btn_sua.Location = new System.Drawing.Point(136, 40);
             this.btn_sua.Name = "btn_sua";
-            this.btn_sua.Size = new System.Drawing.Size(75, 23);
+            this.btn_sua.Size = new System.Drawing.Size(81, 41);
             this.btn_sua.TabIndex = 12;
             this.btn_sua.Text = "Sửa";
             this.btn_sua.UseVisualStyleBackColor = true;
@@ -178,9 +183,9 @@ namespace Doan
             // 
             // btn_reset
             // 
-            this.btn_reset.Location = new System.Drawing.Point(24, 107);
+            this.btn_reset.Location = new System.Drawing.Point(136, 97);
             this.btn_reset.Name = "btn_reset";
-            this.btn_reset.Size = new System.Drawing.Size(75, 23);
+            this.btn_reset.Size = new System.Drawing.Size(81, 41);
             this.btn_reset.TabIndex = 13;
             this.btn_reset.Text = "Reset";
             this.btn_reset.UseVisualStyleBackColor = true;
@@ -203,6 +208,7 @@ namespace Doan
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.Coral;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CourseID,
@@ -212,11 +218,11 @@ namespace Doan
             this.tenMonHocDataGridViewTextBoxColumn,
             this.giangVienIDDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.bindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(69, 254);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 283);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(426, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(959, 172);
             this.dataGridView1.TabIndex = 14;
             // 
             // CourseID
@@ -269,7 +275,8 @@ namespace Doan
             // 
             // FrmQuanLyMonHoc
             // 
-            this.ClientSize = new System.Drawing.Size(545, 430);
+            this.BackgroundImage = global::Doan.Properties.Resources.tet4;
+            this.ClientSize = new System.Drawing.Size(983, 467);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
