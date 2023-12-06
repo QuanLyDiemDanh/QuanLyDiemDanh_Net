@@ -105,6 +105,7 @@
     </Compile>
     <Compile Include="Models\Classes.cs" />
     <Compile Include="Models\Courses.cs" />
+    <Compile Include="Models\DiemDanh.cs" />
     <Compile Include="Models\GiangVien.cs" />
     <Compile Include="Models\GiangVienViewModel.cs" />
     <Compile Include="Models\Students.cs" />

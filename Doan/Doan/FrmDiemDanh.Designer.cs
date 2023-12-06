@@ -89,12 +89,21 @@ namespace Doan
             this.dataGridView_DiemDanh.Name = "dataGridView_DiemDanh";
             this.dataGridView_DiemDanh.RowHeadersWidth = 51;
             this.dataGridView_DiemDanh.RowTemplate.Height = 24;
+<<<<<<< Updated upstream
             this.dataGridView_DiemDanh.Size = new System.Drawing.Size(761, 150);
+=======
+<<<<<<< HEAD
+            this.dataGridView_DiemDanh.Size = new System.Drawing.Size(962, 150);
+=======
+            this.dataGridView_DiemDanh.Size = new System.Drawing.Size(761, 150);
+>>>>>>> 3596880c044ea9090811079f1c7e833757078ee1
+>>>>>>> Stashed changes
             this.dataGridView_DiemDanh.TabIndex = 2;
             this.dataGridView_DiemDanh.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_DiemDanh_CellContentClick);
             // 
             // quanLyDiemDanhSVDataSet
             // 
+<<<<<<< Updated upstream
             this.quanLyDiemDanhSVDataSet.DataSetName = "QuanLyDiemDanhSVDataSet";
             this.quanLyDiemDanhSVDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
@@ -109,6 +118,58 @@ namespace Doan
             // 
             // quanLyDiemDanhSVDataSet3
             // 
+=======
+<<<<<<< HEAD
+            this.colMaSinhVien.DataPropertyName = "StudentID";
+            this.colMaSinhVien.HeaderText = "Mã số sinh viên";
+            this.colMaSinhVien.MinimumWidth = 6;
+            this.colMaSinhVien.Name = "colMaSinhVien";
+            this.colMaSinhVien.Width = 125;
+=======
+            this.quanLyDiemDanhSVDataSet.DataSetName = "QuanLyDiemDanhSVDataSet";
+            this.quanLyDiemDanhSVDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+>>>>>>> 3596880c044ea9090811079f1c7e833757078ee1
+            // 
+            // classesBindingSource
+            // 
+<<<<<<< HEAD
+            this.ColMaMH.DataPropertyName = "CourseID";
+            this.ColMaMH.HeaderText = "Mã môn học";
+            this.ColMaMH.MinimumWidth = 6;
+            this.ColMaMH.Name = "ColMaMH";
+            this.ColMaMH.Width = 125;
+=======
+            this.classesBindingSource.DataMember = "Classes";
+            this.classesBindingSource.DataSource = this.quanLyDiemDanhSVDataSet;
+>>>>>>> 3596880c044ea9090811079f1c7e833757078ee1
+            // 
+            // classesTableAdapter
+            // 
+<<<<<<< HEAD
+            this.ColNgayHoc.DataPropertyName = "NgayHoc";
+            this.ColNgayHoc.HeaderText = "Ngày học";
+            this.ColNgayHoc.MinimumWidth = 6;
+            this.ColNgayHoc.Name = "ColNgayHoc";
+            this.ColNgayHoc.Width = 125;
+=======
+            this.classesTableAdapter.ClearBeforeFill = true;
+>>>>>>> 3596880c044ea9090811079f1c7e833757078ee1
+            // 
+            // quanLyDiemDanhSVDataSet3
+            // 
+<<<<<<< HEAD
+            this.ColTT.DataPropertyName = "Status";
+            this.ColTT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ColTT.HeaderText = "Trạng Thái";
+            this.ColTT.Items.AddRange(new object[] {
+            "Vắng có phép",
+            "Vắng không phép",
+            "Có mặt"});
+            this.ColTT.MinimumWidth = 6;
+            this.ColTT.Name = "ColTT";
+            this.ColTT.Width = 125;
+=======
+>>>>>>> Stashed changes
             this.quanLyDiemDanhSVDataSet3.DataSetName = "QuanLyDiemDanhSVDataSet3";
             this.quanLyDiemDanhSVDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
@@ -163,12 +224,16 @@ namespace Doan
             this.statusDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
             this.statusDataGridViewTextBoxColumn.Width = 125;
+<<<<<<< Updated upstream
+=======
+>>>>>>> 3596880c044ea9090811079f1c7e833757078ee1
+>>>>>>> Stashed changes
             // 
             // FrmDiemDanh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1108, 450);
             this.Controls.Add(this.dataGridView_DiemDanh);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
