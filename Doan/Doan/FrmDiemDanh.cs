@@ -25,10 +25,10 @@ namespace Doan
         }
         void loadData()
         {
-            string query = 
+            //string query = 
 
-            // Thực hiện truy vấn
-            DataTable dt = db.getDataTable(query);
+            //// Thực hiện truy vấn
+            //DataTable dt = db.getDataTable(query);
 
            
         }
@@ -39,41 +39,14 @@ namespace Doan
 
         private void FrmDiemDanh_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'quanLyDiemDanhSVDataSet4.Attendance' table. You can move, or remove it, as needed.
+            this.attendanceTableAdapter1.Fill(this.quanLyDiemDanhSVDataSet4.Attendance);
+            // TODO: This line of code loads data into the 'quanLyDiemDanhSVDataSet3.Attendance' table. You can move, or remove it, as needed.
+            this.attendanceTableAdapter.Fill(this.quanLyDiemDanhSVDataSet3.Attendance);
+            // TODO: This line of code loads data into the 'quanLyDiemDanhSVDataSet.Classes' table. You can move, or remove it, as needed.
+            this.classesTableAdapter.Fill(this.quanLyDiemDanhSVDataSet.Classes);
 
         }
-<<<<<<< HEAD
-=======
 
-        private void btn_xem_Click(object sender, EventArgs e)
-        {
-            // Tạo một danh sách để lưu trữ thông tin các dòng chưa được đánh dấu check
-    List<string> uncheckedRowsInfo = new List<string>();
-
-            // Duyệt qua các dòng trong DataGridView
-            foreach (DataGridViewRow row in dataGridView1.Rows)
-            {
-                // Kiểm tra giá trị của checkbox trong từng dòng
-                DataGridViewCheckBoxCell checkboxCell = row.Cells["CoMat"] as DataGridViewCheckBoxCell;
-                if (checkboxCell != null && checkboxCell.Value != null && !(bool)checkboxCell.Value)
-                {
-                    // Nếu checkbox không được chọn, lấy thông tin của dòng và thêm vào danh sách
-                    string rowInfo = string.Format("CoMat: {5}",row.Cells["CoMat"].Value);
-
-                    uncheckedRowsInfo.Add(rowInfo);
-                }
-            }
-
-            // Hiển thị thông tin của các dòng chưa được đánh dấu check trong MessageBox
-            if (uncheckedRowsInfo.Count > 0)
-            {
-                string message = string.Join("\n", uncheckedRowsInfo);
-                MessageBox.Show(message, "Thông tin dòng chưa được đánh dấu check");
-            }
-            else
-            {
-                MessageBox.Show("Không có dòng nào chưa được đánh dấu check.", "Thông báo");
-            }
-        }
->>>>>>> 29b9e836fd71950cbbe024d7808f9c5e15ad6473
     }
 }
