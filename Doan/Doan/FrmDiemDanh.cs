@@ -57,7 +57,7 @@ namespace Doan
                 if (checkboxCell != null && checkboxCell.Value != null && !(bool)checkboxCell.Value)
                 {
                     // Nếu checkbox không được chọn, lấy thông tin của dòng và thêm vào danh sách
-                    string rowInfo = string.Format("Lop: {5}",row.Cells["Lop"].Value);
+                    string rowInfo = string.Format("CoMat: {5}",row.Cells["CoMat"].Value);
 
                     uncheckedRowsInfo.Add(rowInfo);
                 }
