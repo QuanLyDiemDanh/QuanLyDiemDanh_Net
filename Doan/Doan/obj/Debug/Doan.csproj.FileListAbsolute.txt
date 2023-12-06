@@ -46,4 +46,3 @@ C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\
 C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\New folder\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmDiemDanh.resources
 C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmBaoCao.resources
 C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmDiemDanh.resources
-C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.csproj.AssemblyReference.cache
