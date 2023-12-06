@@ -365,7 +365,7 @@ namespace Doan
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmQuanLyGiangVien";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Giảng Viên";
             this.Load += new System.EventHandler(this.FrmQuanLyGiangVien_Load);
             this.groupBox2.ResumeLayout(false);

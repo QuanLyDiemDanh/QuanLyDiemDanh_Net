@@ -19,7 +19,7 @@ namespace Doan
             Application.SetCompatibleTextRenderingDefault(false);
 
             //chạy ứng dụng 
-            Application.Run(new FrmAdmin());
+            Application.Run(new FrmDangNhap());
         }
     }
 }

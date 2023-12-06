@@ -13,7 +13,7 @@ namespace Doan
 {
     public partial class FrmQuanLyMonHoc : Form
     {
-        string connectstring = @"Data Source=LAPTOP-GGGJGJI6\SQLBYDAU;Initial Catalog=QuanLyDiemDanh;Integrated Security=True";
+        string connectstring = @"Data Source=LAPTOP-GSL3DJO2;Initial Catalog=QuanLyDiemDanhSV;Integrated Security=True";
         SqlConnection connection;
         DataTable dt = new DataTable();
 
@@ -35,7 +35,7 @@ namespace Doan
             DataTable dt = new DataTable();
             da.Fill(dt);
             connection.Close();
-            dataGridView1.DataSource = dt;
+            dataGridView_MonHoc.DataSource = dt;
         }
 
         private void FrmQuanLyLopVaMonHoc_Load(object sender, EventArgs e)
@@ -76,7 +76,7 @@ namespace Doan
                 dt.Rows.Add(newRow);
 
                 // Cập nhật lại DataSource của DataGridView
-                dataGridView1.DataSource = dt;
+                dataGridView_MonHoc.DataSource = dt;
 
                 // Xóa nội dung trong TextBox
                 txt_idMH.Text = "";
@@ -97,12 +97,12 @@ namespace Doan
         
         private void btn_xoa_Click_1(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
+            if (dataGridView_MonHoc.SelectedRows.Count > 0)
             {
                 try
                 {
                     // Lấy giá trị của cột khóa chính từ dòng được chọn
-                    string courseID = dataGridView1.SelectedRows[0].Cells["CourseID"].Value.ToString();
+                    string courseID = dataGridView_MonHoc.SelectedRows[0].Cells["CourseID"].Value.ToString();
 
                     // Mở kết nối
                     connection.Open();
@@ -123,10 +123,10 @@ namespace Doan
                         dt.Rows.Remove(rowToDelete);
 
                     // Cập nhật lại DataSource của DataGridView
-                    dataGridView1.DataSource = dt;
+                    dataGridView_MonHoc.DataSource = dt;
 
                     // Lưu trữ dữ liệu hiện tại vào biến tạm thời
-                    tempData = (DataTable)dataGridView1.DataSource;
+                    tempData = (DataTable)dataGridView_MonHoc.DataSource;
                 }
                 catch
                 {
@@ -138,12 +138,12 @@ namespace Doan
 
         private void btn_sua_Click_1(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
+            if (dataGridView_MonHoc.SelectedRows.Count > 0)
             {
                 try
                 {
                     // Lấy giá trị của cột khóa chính từ dòng được chọn
-                    string courseID = dataGridView1.SelectedRows[0].Cells["CourseID"].Value.ToString();
+                    string courseID = dataGridView_MonHoc.SelectedRows[0].Cells["CourseID"].Value.ToString();
 
                     // Lấy dữ liệu từ các trường dữ liệu
                     string tenMonHoc = txt_tenMH.Text;
@@ -173,7 +173,7 @@ namespace Doan
                     }
 
                     // Cập nhật lại DataSource của DataGridView
-                    dataGridView1.DataSource = dt;
+                    dataGridView_MonHoc.DataSource = dt;
 
                     // Xóa nội dung trong TextBox
                     txt_idMH.Text = "";
@@ -181,7 +181,7 @@ namespace Doan
                     txt_idGV.Text = "";
 
                     // Lưu trữ dữ liệu hiện tại vào biến tạm thời
-                    tempData = (DataTable)dataGridView1.DataSource;
+                    tempData = (DataTable)dataGridView_MonHoc.DataSource;
                 }
                 catch
                 {
@@ -199,10 +199,10 @@ namespace Doan
             DataTable newData = new DataTable();
 
             // Kiểm tra nếu có dữ liệu hiện tại trong DataGridView
-            if (dataGridView1.DataSource != null)
+            if (dataGridView_MonHoc.DataSource != null)
             {
                 // Lưu trữ dữ liệu hiện tại vào biến tạm thời
-                tempData = dataGridView1.DataSource as DataTable;
+                tempData = dataGridView_MonHoc.DataSource as DataTable;
 
                 // Sao chép cấu trúc cột từ dữ liệu hiện tại vào DataTable mới
                 newData = tempData.Clone();
@@ -225,16 +225,16 @@ namespace Doan
             txt_idGV.Text = "";
 
             // Đặt lại DataSource của DataGridView
-            dataGridView1.DataSource = null;
-            dataGridView1.DataSource = dt;
+            dataGridView_MonHoc.DataSource = null;
+            dataGridView_MonHoc.DataSource = dt;
 
             // Đặt DataGridView về tình trạng mới
-            dataGridView1.AllowUserToAddRows = true;
-            dataGridView1.AllowUserToDeleteRows = true;
-            dataGridView1.ReadOnly = true;
+            dataGridView_MonHoc.AllowUserToAddRows = true;
+            dataGridView_MonHoc.AllowUserToDeleteRows = true;
+            dataGridView_MonHoc.ReadOnly = true;
 
             // Khôi phục dữ liệu từ biến tạm thời vào DataGridView
-            dataGridView1.DataSource = newData;
+            dataGridView_MonHoc.DataSource = newData;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -254,6 +254,14 @@ namespace Doan
 
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i;
+            i = dataGridView_MonHoc.CurrentRow.Index;
+            txt_idMH.Text = dataGridView_MonHoc.Rows[i].Cells[0].Value.ToString();
+            txt_tenMH.Text = dataGridView_MonHoc.Rows[i].Cells[1].Value.ToString();
+            txt_idGV.Text = dataGridView_MonHoc.Rows[i].Cells[2].Value.ToString();
+        }
     }
 }
 

@@ -51,8 +51,9 @@ namespace Doan
             }
             if(taikhoan.GiangVienID==txtTaiKhoan.Text && taikhoan.PassGV==mk)
             {
+                FrmGiangVien frmGiangVien = new FrmGiangVien(txtTaiKhoan.Text);
                 this.Hide();
-                new FrmGiangVien().Show();
+                frmGiangVien.Show();
             }    
             else if(taikhoanam.username == txtTaiKhoan.Text && taikhoanam.adminpass == mk)
             {
@@ -72,6 +73,6 @@ namespace Doan
         private void FrmDangNhap_Load(object sender, EventArgs e)
         {
 
-        }
+        }          
     }
 }

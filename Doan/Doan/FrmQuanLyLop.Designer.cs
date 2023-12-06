@@ -41,11 +41,6 @@ namespace Doan
             this.txt_start = new System.Windows.Forms.TextBox();
             this.txt_end = new System.Windows.Forms.TextBox();
             this.dataGridView_Class = new System.Windows.Forms.DataGridView();
-            this.ClassID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThoiGianBatDau = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThoiGianKetThuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CourseID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.classesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyDiemDanhDataSet1 = new Doan.QuanLyDiemDanhDataSet1();
             this.btn_them = new System.Windows.Forms.Button();
@@ -59,6 +54,11 @@ namespace Doan
             this.classesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.classesTableAdapter1 = new Doan.QuanLyDiemDanhDataSet2TableAdapters.ClassesTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
+            this.ClassID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNgayHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThoiGianBatDau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThoiGianKetThuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CourseID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Class)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.classesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyDiemDanhDataSet1)).BeginInit();
@@ -83,7 +83,7 @@ namespace Doan
             // lb_malop
             // 
             this.lb_malop.AutoSize = true;
-            this.lb_malop.Location = new System.Drawing.Point(11, 19);
+            this.lb_malop.Location = new System.Drawing.Point(50, 18);
             this.lb_malop.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_malop.Name = "lb_malop";
             this.lb_malop.Size = new System.Drawing.Size(79, 22);
@@ -93,7 +93,7 @@ namespace Doan
             // lb_ngayhoc
             // 
             this.lb_ngayhoc.AutoSize = true;
-            this.lb_ngayhoc.Location = new System.Drawing.Point(11, 69);
+            this.lb_ngayhoc.Location = new System.Drawing.Point(34, 69);
             this.lb_ngayhoc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_ngayhoc.Name = "lb_ngayhoc";
             this.lb_ngayhoc.Size = new System.Drawing.Size(95, 22);
@@ -103,7 +103,7 @@ namespace Doan
             // lb_TGbatdau
             // 
             this.lb_TGbatdau.AutoSize = true;
-            this.lb_TGbatdau.Location = new System.Drawing.Point(8, 25);
+            this.lb_TGbatdau.Location = new System.Drawing.Point(4, 25);
             this.lb_TGbatdau.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_TGbatdau.Name = "lb_TGbatdau";
             this.lb_TGbatdau.Size = new System.Drawing.Size(159, 22);
@@ -113,7 +113,7 @@ namespace Doan
             // lb_TGketthuc
             // 
             this.lb_TGketthuc.AutoSize = true;
-            this.lb_TGketthuc.Location = new System.Drawing.Point(8, 74);
+            this.lb_TGketthuc.Location = new System.Drawing.Point(4, 74);
             this.lb_TGketthuc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_TGketthuc.Name = "lb_TGketthuc";
             this.lb_TGketthuc.Size = new System.Drawing.Size(163, 22);
@@ -148,18 +148,18 @@ namespace Doan
             // 
             // txt_start
             // 
-            this.txt_start.Location = new System.Drawing.Point(231, 18);
+            this.txt_start.Location = new System.Drawing.Point(171, 22);
             this.txt_start.Margin = new System.Windows.Forms.Padding(4);
             this.txt_start.Name = "txt_start";
-            this.txt_start.Size = new System.Drawing.Size(136, 30);
+            this.txt_start.Size = new System.Drawing.Size(140, 30);
             this.txt_start.TabIndex = 9;
             // 
             // txt_end
             // 
-            this.txt_end.Location = new System.Drawing.Point(231, 70);
+            this.txt_end.Location = new System.Drawing.Point(171, 71);
             this.txt_end.Margin = new System.Windows.Forms.Padding(4);
             this.txt_end.Name = "txt_end";
-            this.txt_end.Size = new System.Drawing.Size(136, 30);
+            this.txt_end.Size = new System.Drawing.Size(140, 30);
             this.txt_end.TabIndex = 10;
             // 
             // dataGridView_Class
@@ -168,7 +168,7 @@ namespace Doan
             this.dataGridView_Class.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Class.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ClassID,
-            this.NgayHoc,
+            this.colNgayHoc,
             this.ThoiGianBatDau,
             this.ThoiGianKetThuc,
             this.CourseID});
@@ -181,46 +181,6 @@ namespace Doan
             this.dataGridView_Class.Size = new System.Drawing.Size(775, 260);
             this.dataGridView_Class.TabIndex = 12;
             this.dataGridView_Class.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // ClassID
-            // 
-            this.ClassID.DataPropertyName = "ClassID";
-            this.ClassID.HeaderText = "Mã lớp";
-            this.ClassID.MinimumWidth = 6;
-            this.ClassID.Name = "ClassID";
-            this.ClassID.Width = 125;
-            // 
-            // NgayHoc
-            // 
-            this.NgayHoc.DataPropertyName = "NgayHoc";
-            this.NgayHoc.HeaderText = "Ngày học ";
-            this.NgayHoc.MinimumWidth = 6;
-            this.NgayHoc.Name = "NgayHoc";
-            this.NgayHoc.Width = 125;
-            // 
-            // ThoiGianBatDau
-            // 
-            this.ThoiGianBatDau.DataPropertyName = "ThoiGianBatDau";
-            this.ThoiGianBatDau.HeaderText = "Thời gian bắt đầu";
-            this.ThoiGianBatDau.MinimumWidth = 6;
-            this.ThoiGianBatDau.Name = "ThoiGianBatDau";
-            this.ThoiGianBatDau.Width = 125;
-            // 
-            // ThoiGianKetThuc
-            // 
-            this.ThoiGianKetThuc.DataPropertyName = "ThoiGianKetThuc";
-            this.ThoiGianKetThuc.HeaderText = "Thời Gian Kết Thúc";
-            this.ThoiGianKetThuc.MinimumWidth = 6;
-            this.ThoiGianKetThuc.Name = "ThoiGianKetThuc";
-            this.ThoiGianKetThuc.Width = 125;
-            // 
-            // CourseID
-            // 
-            this.CourseID.DataPropertyName = "CourseID";
-            this.CourseID.HeaderText = "Mã môn học ";
-            this.CourseID.MinimumWidth = 6;
-            this.CourseID.Name = "CourseID";
-            this.CourseID.Width = 125;
             // 
             // classesBindingSource
             // 
@@ -245,7 +205,7 @@ namespace Doan
             // 
             // btn_xoa
             // 
-            this.btn_xoa.Location = new System.Drawing.Point(673, 271);
+            this.btn_xoa.Location = new System.Drawing.Point(647, 271);
             this.btn_xoa.Margin = new System.Windows.Forms.Padding(4);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(103, 32);
@@ -256,7 +216,7 @@ namespace Doan
             // 
             // btn_sua
             // 
-            this.btn_sua.Location = new System.Drawing.Point(812, 271);
+            this.btn_sua.Location = new System.Drawing.Point(774, 271);
             this.btn_sua.Margin = new System.Windows.Forms.Padding(4);
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(103, 32);
@@ -273,11 +233,11 @@ namespace Doan
             this.groupBox1.Controls.Add(this.lb_idMH);
             this.groupBox1.Controls.Add(this.lb_ngayhoc);
             this.groupBox1.Controls.Add(this.lb_malop);
-            this.groupBox1.Location = new System.Drawing.Point(87, 102);
+            this.groupBox1.Location = new System.Drawing.Point(102, 102);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(330, 161);
+            this.groupBox1.Size = new System.Drawing.Size(315, 161);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             // 
@@ -301,7 +261,7 @@ namespace Doan
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(389, 124);
+            this.groupBox2.Size = new System.Drawing.Size(362, 124);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             // 
@@ -325,13 +285,53 @@ namespace Doan
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(13, 309);
+            this.button1.Location = new System.Drawing.Point(102, 309);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 30);
             this.button1.TabIndex = 18;
             this.button1.Text = "Hiển Thị Tất Cả";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // ClassID
+            // 
+            this.ClassID.DataPropertyName = "ClassID";
+            this.ClassID.HeaderText = "Mã lớp";
+            this.ClassID.MinimumWidth = 6;
+            this.ClassID.Name = "ClassID";
+            this.ClassID.Width = 125;
+            // 
+            // colNgayHoc
+            // 
+            this.colNgayHoc.DataPropertyName = "NgayHoc";
+            this.colNgayHoc.HeaderText = "Ngày học ";
+            this.colNgayHoc.MinimumWidth = 6;
+            this.colNgayHoc.Name = "colNgayHoc";
+            this.colNgayHoc.Width = 125;
+            // 
+            // ThoiGianBatDau
+            // 
+            this.ThoiGianBatDau.DataPropertyName = "ThoiGianBatDau";
+            this.ThoiGianBatDau.HeaderText = "Thời gian bắt đầu";
+            this.ThoiGianBatDau.MinimumWidth = 6;
+            this.ThoiGianBatDau.Name = "ThoiGianBatDau";
+            this.ThoiGianBatDau.Width = 125;
+            // 
+            // ThoiGianKetThuc
+            // 
+            this.ThoiGianKetThuc.DataPropertyName = "ThoiGianKetThuc";
+            this.ThoiGianKetThuc.HeaderText = "Thời Gian Kết Thúc";
+            this.ThoiGianKetThuc.MinimumWidth = 6;
+            this.ThoiGianKetThuc.Name = "ThoiGianKetThuc";
+            this.ThoiGianKetThuc.Width = 125;
+            // 
+            // CourseID
+            // 
+            this.CourseID.DataPropertyName = "CourseID";
+            this.CourseID.HeaderText = "Mã môn học ";
+            this.CourseID.MinimumWidth = 6;
+            this.CourseID.Name = "CourseID";
+            this.CourseID.Width = 125;
             // 
             // FrmQuanLyLop
             // 
@@ -392,11 +392,11 @@ namespace Doan
         private System.Windows.Forms.BindingSource classesBindingSource1;
         private QuanLyDiemDanhDataSet2TableAdapters.ClassesTableAdapter classesTableAdapter1;
         private System.Windows.Forms.DateTimePicker date_NgayHoc;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClassID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgayHoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNgayHoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThoiGianBatDau;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThoiGianKetThuc;
         private System.Windows.Forms.DataGridViewTextBoxColumn CourseID;
-        private System.Windows.Forms.Button button1;
     }
 }

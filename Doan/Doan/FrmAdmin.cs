@@ -166,7 +166,7 @@ namespace Doan
             {
                 if (!checkExitsForm("FrmDiemDanh"))
                 {
-                    FrmDiemDanh frm = new FrmDiemDanh();
+                    FrmBaoCao frm = new FrmBaoCao();
                     frm.MdiParent = this;
                     frm.Name = "FrmDiemDanh";
                     frm.Show();

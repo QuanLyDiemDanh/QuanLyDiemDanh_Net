@@ -46,7 +46,7 @@ namespace Doan
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyDiemDanhDataSet = new Doan.QuanLyDiemDanhDataSet();
             this.coursesTableAdapter = new Doan.QuanLyDiemDanhDataSetTableAdapters.CoursesTableAdapter();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView_MonHoc = new System.Windows.Forms.DataGridView();
             this.CourseID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenMonHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GiangVienID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,7 +57,7 @@ namespace Doan
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyDiemDanhDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_MonHoc)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -68,7 +68,7 @@ namespace Doan
             this.label1.Image = global::Doan.Properties.Resources.cooldownpink;
             this.label1.Location = new System.Drawing.Point(356, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(267, 38);
+            this.label1.Size = new System.Drawing.Size(255, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Quản lý môn học";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -205,25 +205,26 @@ namespace Doan
             // 
             this.coursesTableAdapter.ClearBeforeFill = true;
             // 
-            // dataGridView1
+            // dataGridView_MonHoc
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Coral;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridView_MonHoc.AutoGenerateColumns = false;
+            this.dataGridView_MonHoc.BackgroundColor = System.Drawing.Color.Coral;
+            this.dataGridView_MonHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_MonHoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CourseID,
             this.TenMonHoc,
             this.GiangVienID,
             this.courseIDDataGridViewTextBoxColumn,
             this.tenMonHocDataGridViewTextBoxColumn,
             this.giangVienIDDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.bindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 283);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(959, 172);
-            this.dataGridView1.TabIndex = 14;
+            this.dataGridView_MonHoc.DataSource = this.bindingSource1;
+            this.dataGridView_MonHoc.Location = new System.Drawing.Point(12, 283);
+            this.dataGridView_MonHoc.Name = "dataGridView_MonHoc";
+            this.dataGridView_MonHoc.RowHeadersWidth = 51;
+            this.dataGridView_MonHoc.RowTemplate.Height = 24;
+            this.dataGridView_MonHoc.Size = new System.Drawing.Size(959, 172);
+            this.dataGridView_MonHoc.TabIndex = 14;
+            this.dataGridView_MonHoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // CourseID
             // 
@@ -277,18 +278,19 @@ namespace Doan
             // 
             this.BackgroundImage = global::Doan.Properties.Resources.tet4;
             this.ClientSize = new System.Drawing.Size(983, 467);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridView_MonHoc);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label1);
             this.Name = "FrmQuanLyMonHoc";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FrmQuanLyMonHoc_Load);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyDiemDanhDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_MonHoc)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -311,7 +313,7 @@ namespace Doan
         private QuanLyDiemDanhDataSet quanLyDiemDanhDataSet;
         private System.Windows.Forms.BindingSource bindingSource1;
         private QuanLyDiemDanhDataSetTableAdapters.CoursesTableAdapter coursesTableAdapter;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView_MonHoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn CourseID;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenMonHoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn GiangVienID;

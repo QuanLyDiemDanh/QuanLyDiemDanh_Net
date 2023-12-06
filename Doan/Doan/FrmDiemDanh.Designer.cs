@@ -29,147 +29,106 @@ namespace Doan
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.btn_xem = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lop = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CoMat = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.quanLyDiemDanhDataSet4 = new Doan.QuanLyDiemDanhDataSet4();
-            this.studentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.studentsTableAdapter = new Doan.QuanLyDiemDanhDataSet4TableAdapters.StudentsTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyDiemDanhDataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).BeginInit();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView_DiemDanh = new System.Windows.Forms.DataGridView();
+            this.colMaSinhVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColMaMH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColNgayHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColTT = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_DiemDanh)).BeginInit();
             this.SuspendLayout();
             // 
-            // btn_xem
+            // comboBox1
             // 
-            this.btn_xem.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xem.Image = global::Doan.Properties.Resources.cooldownpink;
-            this.btn_xem.Location = new System.Drawing.Point(375, 27);
-            this.btn_xem.Name = "btn_xem";
-            this.btn_xem.Size = new System.Drawing.Size(340, 72);
-            this.btn_xem.TabIndex = 1;
-            this.btn_xem.Text = "Xem báo cáo";
-            this.btn_xem.UseVisualStyleBackColor = true;
-            this.btn_xem.Click += new System.EventHandler(this.btn_xem_Click);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(80, 143);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 0;
             // 
-            // dataGridView1
+            // label1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.PeachPuff;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.StudentID,
-            this.HoTen,
-            this.NgaySinh,
-            this.GioiTinh,
-            this.Lop,
-            this.CoMat});
-            this.dataGridView1.Location = new System.Drawing.Point(37, 133);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1065, 321);
-            this.dataGridView1.TabIndex = 2;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(228, 146);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 17);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Chọn ngày";
             // 
-            // StudentID
+            // dataGridView_DiemDanh
             // 
-            this.StudentID.DataPropertyName = "StudentID";
-            this.StudentID.HeaderText = "Mã sinh viên";
-            this.StudentID.MinimumWidth = 6;
-            this.StudentID.Name = "StudentID";
-            this.StudentID.Width = 125;
+            this.dataGridView_DiemDanh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_DiemDanh.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colMaSinhVien,
+            this.ColMaMH,
+            this.ColNgayHoc,
+            this.ColTT});
+            this.dataGridView_DiemDanh.Location = new System.Drawing.Point(27, 214);
+            this.dataGridView_DiemDanh.Name = "dataGridView_DiemDanh";
+            this.dataGridView_DiemDanh.RowHeadersWidth = 51;
+            this.dataGridView_DiemDanh.RowTemplate.Height = 24;
+            this.dataGridView_DiemDanh.Size = new System.Drawing.Size(740, 150);
+            this.dataGridView_DiemDanh.TabIndex = 2;
+            this.dataGridView_DiemDanh.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_DiemDanh_CellContentClick);
             // 
-            // HoTen
+            // colMaSinhVien
             // 
-            this.HoTen.DataPropertyName = "HoTen";
-            this.HoTen.HeaderText = "Tên sinh viên";
-            this.HoTen.MinimumWidth = 6;
-            this.HoTen.Name = "HoTen";
-            this.HoTen.Width = 125;
+            this.colMaSinhVien.HeaderText = "Mã số sinh viên";
+            this.colMaSinhVien.MinimumWidth = 6;
+            this.colMaSinhVien.Name = "colMaSinhVien";
+            this.colMaSinhVien.Width = 125;
             // 
-            // NgaySinh
+            // ColMaMH
             // 
-            this.NgaySinh.DataPropertyName = "NgaySinh";
-            this.NgaySinh.HeaderText = "Ngày sinh";
-            this.NgaySinh.MinimumWidth = 6;
-            this.NgaySinh.Name = "NgaySinh";
-            this.NgaySinh.Width = 125;
+            this.ColMaMH.HeaderText = "Mã môn học";
+            this.ColMaMH.MinimumWidth = 6;
+            this.ColMaMH.Name = "ColMaMH";
+            this.ColMaMH.Width = 125;
             // 
-            // GioiTinh
+            // ColNgayHoc
             // 
-            this.GioiTinh.DataPropertyName = "GioiTinh";
-            this.GioiTinh.HeaderText = "Giới tính";
-            this.GioiTinh.MinimumWidth = 6;
-            this.GioiTinh.Name = "GioiTinh";
-            this.GioiTinh.Width = 125;
+            this.ColNgayHoc.HeaderText = "Ngày học";
+            this.ColNgayHoc.MinimumWidth = 6;
+            this.ColNgayHoc.Name = "ColNgayHoc";
+            this.ColNgayHoc.Width = 125;
             // 
-            // Lop
+            // ColTT
             // 
-            this.Lop.DataPropertyName = "Lop";
-            this.Lop.HeaderText = "Lớp";
-            this.Lop.MinimumWidth = 6;
-            this.Lop.Name = "Lop";
-            this.Lop.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Lop.Width = 125;
-            // 
-            // CoMat
-            // 
-            this.CoMat.HeaderText = "Có mặt";
-            this.CoMat.MinimumWidth = 6;
-            this.CoMat.Name = "CoMat";
-            this.CoMat.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.CoMat.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.CoMat.Width = 125;
-            // 
-            // quanLyDiemDanhDataSet4
-            // 
-            this.quanLyDiemDanhDataSet4.DataSetName = "QuanLyDiemDanhDataSet4";
-            this.quanLyDiemDanhDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // studentsBindingSource
-            // 
-            this.studentsBindingSource.DataMember = "Students";
-            this.studentsBindingSource.DataSource = this.quanLyDiemDanhDataSet4;
-            // 
-            // studentsTableAdapter
-            // 
-            this.studentsTableAdapter.ClearBeforeFill = true;
+            this.ColTT.HeaderText = "Trạng Thái";
+            this.ColTT.Items.AddRange(new object[] {
+            "Vắng có phép",
+            "Vắng không phép",
+            "Có mặt"});
+            this.ColTT.MinimumWidth = 6;
+            this.ColTT.Name = "ColTT";
+            this.ColTT.Width = 125;
             // 
             // FrmDiemDanh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Doan.Properties.Resources.tet2;
-            this.ClientSize = new System.Drawing.Size(1130, 509);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btn_xem);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView_DiemDanh);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox1);
             this.Name = "FrmDiemDanh";
             this.Text = "FrmDiemDanh";
             this.Load += new System.EventHandler(this.FrmDiemDanh_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyDiemDanhDataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_DiemDanh)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btn_xem;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private QuanLyDiemDanhDataSet4 quanLyDiemDanhDataSet4;
-        private System.Windows.Forms.BindingSource studentsBindingSource;
-        private QuanLyDiemDanhDataSet4TableAdapters.StudentsTableAdapter studentsTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Lop;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn CoMat;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridView_DiemDanh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMaSinhVien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColMaMH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColNgayHoc;
+        private System.Windows.Forms.DataGridViewComboBoxColumn ColTT;
     }
 }

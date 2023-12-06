@@ -61,6 +61,12 @@
     <Compile Include="FrmDangNhap.Designer.cs">
       <DependentUpon>FrmDangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBaoCao.Designer.cs">
+      <DependentUpon>FrmBaoCao.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDiemDanh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,7 +104,9 @@
       <DependentUpon>FrmQuanLyTaiKhoanGV.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Classes.cs" />
+    <Compile Include="Models\Courses.cs" />
     <Compile Include="Models\GiangVien.cs" />
+    <Compile Include="Models\GiangVienViewModel.cs" />
     <Compile Include="Models\Students.cs" />
     <Compile Include="Models\TaiKhoanAdmin.cs" />
     <Compile Include="Models\TaiKhoanGV.cs" />
@@ -140,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDangNhap.resx">
       <DependentUpon>FrmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBaoCao.resx">
+      <DependentUpon>FrmBaoCao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDiemDanh.resx">
       <DependentUpon>FrmDiemDanh.cs</DependentUpon>
@@ -351,6 +362,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tet6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
