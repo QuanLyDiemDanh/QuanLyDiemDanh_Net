@@ -13,7 +13,7 @@ namespace Doan
 {
     public partial class FrmQuanLyMonHoc : Form
     {
-        string connectstring = @"Data Source=LAPTOP-GSL3DJO2;Initial Catalog=QuanLyDiemDanhSV;Integrated Security=True";
+        string connectstring = @"Data Source=DESKTOP-B3HHTL3\SQLEXPRESS;Initial Catalog=QuanLyDiemDanhSV;Integrated Security=True";
         SqlConnection connection;
         DataTable dt = new DataTable();
 

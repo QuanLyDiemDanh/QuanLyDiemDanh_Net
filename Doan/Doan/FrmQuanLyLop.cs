@@ -15,9 +15,9 @@ namespace Doan
     public partial class FrmQuanLyLop : Form
     {
         DBConnect db = new DBConnect();
-        //string connectstring = @"Data Source=LAPTOP-GGGJGJI6\SQLBYDAU;Initial Catalog=QuanLyDiemDanh;Integrated Security=True";
-        //SqlConnection connection;
-        //DataTable dt = new DataTable();
+        string connectstring = @"Data Source=DESKTOP-B3HHTL3\SQLEXPRESS;Initial Catalog=QuanLyDiemDanh;Integrated Security=True";
+        SqlConnection connection;
+        DataTable dt = new DataTable();
         public FrmQuanLyLop()
         {
             InitializeComponent();
