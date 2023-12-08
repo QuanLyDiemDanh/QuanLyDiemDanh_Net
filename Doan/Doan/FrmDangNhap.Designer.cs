@@ -124,7 +124,6 @@ namespace Doan
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ĐĂNG NHẬP";
             this.Load += new System.EventHandler(this.FrmDangNhap_Load);
-            //this.Enter += new System.EventHandler(this.FrmDangNhap_Enter);
             this.ResumeLayout(false);
             this.PerformLayout();
 

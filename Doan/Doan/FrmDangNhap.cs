@@ -18,7 +18,6 @@ namespace Doan
         public FrmDangNhap()
         {
             InitializeComponent();
-            SetDefaultButton();
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -30,7 +29,7 @@ namespace Doan
             }
         }
 
-        public void btnDangNhap_Click(object sender, EventArgs e)
+        private void btnDangNhap_Click(object sender, EventArgs e)
         {
             string str = "select * from TaiKhoanGV where GiangVienID = '" + txtTaiKhoan.Text + "'";
             string mk = txtpass.Text;
@@ -50,21 +49,21 @@ namespace Doan
                 taikhoanam.username = i["username"].ToString();
                 taikhoanam.adminpass = i["adminpass"].ToString();
             }
-            if (taikhoan.GiangVienID == txtTaiKhoan.Text && taikhoan.PassGV == mk)
+            if(taikhoan.GiangVienID==txtTaiKhoan.Text && taikhoan.PassGV==mk)
             {
                 FrmGiangVien frmGiangVien = new FrmGiangVien(txtTaiKhoan.Text);
                 this.Hide();
                 frmGiangVien.Show();
-            }
-            else if (taikhoanam.username == txtTaiKhoan.Text && taikhoanam.adminpass == mk)
+            }    
+            else if(taikhoanam.username == txtTaiKhoan.Text && taikhoanam.adminpass == mk)
             {
                 this.Hide();
                 new FrmAdmin().Show();
-            }
+            }    
             else
             {
                 MessageBox.Show("Thông tin tài khoản không chính xác!", "Thông báo", MessageBoxButtons.OKCancel);
-            }
+            }    
         }
         private void txtTaiKhoan_TextChanged(object sender, EventArgs e)
         {
@@ -74,24 +73,6 @@ namespace Doan
         private void FrmDangNhap_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void YourForm_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)Keys.Enter)
-            {
-                // Xử lý sự kiện Enter ở đây
-                e.Handled = true; // Ngăn chặn sự kiện được truyền tiếp
-            }
-        }
-
-        private void SetDefaultButton()
-        {
-            // Chọn nút đăng nhập làm nút mặc định (AcceptButton)
-            this.AcceptButton = btnDangNhap;
-
-            // Gắn sự kiện Click cho nút đăng nhập
-        }
-
+        }          
     }
 }
