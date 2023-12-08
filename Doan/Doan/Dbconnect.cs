@@ -18,7 +18,7 @@ namespace Doan
             set { connect = value; }
         }
 
-        string str_connection = @"Data Source=LAPTOP-GSL3DJO2;Initial Catalog=QuanLyDiemDanhSV;Integrated Security=True";
+        string str_connection = @"Data Source=DESKTOP-B3HHTL3\SQLEXPRESS;Initial Catalog=QuanLyDiemDanhSV;Integrated Security=True";
 
         public DBConnect()
         {
