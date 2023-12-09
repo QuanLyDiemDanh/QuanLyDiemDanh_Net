@@ -66,3 +66,5 @@ D:\BT\BT\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.csproj.GenerateResource.cac
 D:\BT\BT\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.csproj.CoreCompileInputs.cache
 D:\BT\BT\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.exe
 D:\BT\BT\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.pdb
+D:\BT\BT\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.FrmDoiMK.resources
+D:\BT\BT\QuanLyDiemDanh_Net\Doan\Doan\obj\Debug\Doan.ThongKe.tkNVNghiCP.resources

@@ -192,5 +192,36 @@ namespace Doan
                 ActiveChildForm("FrmQuanLyLop");
             }
         }
+
+        private void thốngKêToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void dSSinhVienToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = FrmAdmin.ActiveForm;
+            foreach (Form f in frm.MdiChildren)
+            {
+                if (f.Name == "FrmBaoCao")
+                {
+                    f.Activate();
+                    return;
+                }
+            }
+
+
+            FrmBaoCao frm1 = new FrmBaoCao();
+            frm1.MdiParent = this;
+
+            frm1.Show();
+            frm1.Top = 0;
+            frm1.Left = 0;
+        }
+
+        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmDoiMK frm = new FrmDoiMK();
+            frm.Show();
+        }
     }
 }
