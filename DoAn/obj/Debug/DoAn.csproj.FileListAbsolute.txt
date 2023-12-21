@@ -1,0 +1,15 @@
+C:\Users\kebao\OneDrive\Desktop\DiemDanhSinhVien-master\DoAn\bin\Debug\DoAn.exe.config
+C:\Users\kebao\OneDrive\Desktop\DiemDanhSinhVien-master\DoAn\bin\Debug\DoAn.exe
+C:\Users\kebao\OneDrive\Desktop\DiemDanhSinhVien-master\DoAn\bin\Debug\DoAn.pdb
+C:\Users\kebao\OneDrive\Desktop\DiemDanhSinhVien-master\DoAn\obj\Debug\DoAn.csproj.AssemblyReference.cache
+C:\Users\kebao\OneDrive\Desktop\DiemDanhSinhVien-master\DoAn\obj\Debug\DoAn.frm_DangNhap.resources
+C:\Users\kebao\OneDrive\Desktop\DiemDanhSinhVien-master\DoAn\obj\Debug\DoAn.frm_GiangVien.resources
+C:\Users\kebao\OneDrive\Desktop\DiemDanhSinhVien-master\DoAn\obj\Debug\DoAn.frm_GV_DiemDanh.resources
+C:\Users\kebao\OneDrive\Desktop\DiemDanhSinhVien-master\DoAn\obj\Debug\DoAn.frm_SinhVien.resources
+C:\Users\kebao\OneDrive\Desktop\DiemDanhSinhVien-master\DoAn\obj\Debug\DoAn.Properties.Resources.resources
+C:\Users\kebao\OneDrive\Desktop\DiemDanhSinhVien-master\DoAn\obj\Debug\DoAn.ThongTinGiangVien.resources
+C:\Users\kebao\OneDrive\Desktop\DiemDanhSinhVien-master\DoAn\obj\Debug\DoAn.ThongTinSinhVien.resources
+C:\Users\kebao\OneDrive\Desktop\DiemDanhSinhVien-master\DoAn\obj\Debug\DoAn.csproj.GenerateResource.cache
+C:\Users\kebao\OneDrive\Desktop\DiemDanhSinhVien-master\DoAn\obj\Debug\DoAn.csproj.CoreCompileInputs.cache
+C:\Users\kebao\OneDrive\Desktop\DiemDanhSinhVien-master\DoAn\obj\Debug\DoAn.exe
+C:\Users\kebao\OneDrive\Desktop\DiemDanhSinhVien-master\DoAn\obj\Debug\DoAn.pdb
