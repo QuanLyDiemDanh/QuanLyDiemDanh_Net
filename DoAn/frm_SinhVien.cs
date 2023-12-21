@@ -90,21 +90,21 @@ namespace DoAn
             DangXuat(this, new EventArgs());
         }
 
-        private void info_Click(object sender, EventArgs e)
-        {
-            ThongTinSinhVien f = new ThongTinSinhVien();
-            f.getID(id);
-            f.Show();
-            this.Hide();
-            f.DangXuat += f_DangXuat;
-        }
+        //private void info_Click(object sender, EventArgs e)
+        //{
+        //    ThongTinSinhVien f = new ThongTinSinhVien();
+        //    f.getID(id);
+        //    f.Show();
+        //    this.Hide();
+        //    f.DangXuat += f_DangXuat;
+        //}
 
-        void f_DangXuat(object sender, EventArgs e)
-        {
-            (sender as ThongTinSinhVien).isThoat = false;
-            (sender as ThongTinSinhVien).Close();
-            this.Show();
+        //void f_DangXuat(object sender, EventArgs e)
+        //{
+        //    (sender as ThongTinSinhVien).isThoat = false;
+        //    (sender as ThongTinSinhVien).Close();
+        //    this.Show();
 
-        }
+        //}
     }
 }

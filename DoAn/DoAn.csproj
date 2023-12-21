@@ -46,11 +46,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBConnect.cs" />
-    <Compile Include="frm_DangNhap.cs">
+    <Compile Include="FrmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_DangNhap.Designer.cs">
-      <DependentUpon>frm_DangNhap.cs</DependentUpon>
+    <Compile Include="FrmDangNhap.Designer.cs">
+      <DependentUpon>FrmDangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_GiangVien.cs">
       <SubType>Form</SubType>
@@ -70,24 +70,25 @@
     <Compile Include="frm_SinhVien.Designer.cs">
       <DependentUpon>frm_SinhVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modify.cs" />
+    <Compile Include="FrmKhoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKhoa.Designer.cs">
+      <DependentUpon>FrmKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GiangVien.cs" />
+    <Compile Include="Models\Khoa.cs" />
+    <Compile Include="Models\SinhVien.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TaiKhoan.cs" />
     <Compile Include="ThongTinGiangVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ThongTinGiangVien.Designer.cs">
       <DependentUpon>ThongTinGiangVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThongTinSinhVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ThongTinSinhVien.Designer.cs">
-      <DependentUpon>ThongTinSinhVien.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="frm_DangNhap.resx">
-      <DependentUpon>frm_DangNhap.cs</DependentUpon>
+    <EmbeddedResource Include="FrmDangNhap.resx">
+      <DependentUpon>FrmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_GiangVien.resx">
       <DependentUpon>frm_GiangVien.cs</DependentUpon>
@@ -106,13 +107,16 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="ThongTinGiangVien.resx">
       <DependentUpon>ThongTinGiangVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThongTinSinhVien.resx">
-      <DependentUpon>ThongTinSinhVien.cs</DependentUpon>
-    </EmbeddedResource>
+    <None Include="hinhanh\background-tet-nguyen-dan-27.webp" />
+    <None Include="hinhanh\huy.heic" />
+    <None Include="hinhanh\huy.webp" />
+    <None Include="hinhanh\save.heic" />
+    <None Include="hinhanh\yellow-cardboard-background-flat-lay-top-view_164357-2985.avif" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -125,6 +129,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="hinhanh\add.jpg" />
+    <Content Include="hinhanh\add.png" />
+    <Content Include="hinhanh\add111.png" />
+    <Content Include="hinhanh\add222.png" />
+    <Content Include="hinhanh\bgrTet.jpg" />
+    <Content Include="hinhanh\bgrTet1.jpg" />
+    <Content Include="hinhanh\bgrTet2.jpg" />
+    <Content Include="hinhanh\blue.png" />
+    <Content Include="hinhanh\cooldownpink.jpg" />
+    <Content Include="hinhanh\green.png" />
+    <Content Include="hinhanh\huy.jpg" />
+    <Content Include="hinhanh\huy.png" />
+    <Content Include="hinhanh\icon.ico" />
+    <Content Include="hinhanh\icon.jpg" />
+    <Content Include="hinhanh\khung.png" />
+    <Content Include="hinhanh\khung1.jpg" />
+    <Content Include="hinhanh\logo.jpg" />
+    <Content Include="hinhanh\logo1.jpg" />
+    <Content Include="hinhanh\logout.png" />
+    <Content Include="hinhanh\lua.jpg" />
+    <Content Include="hinhanh\pexels-codioful-%28formerly-gradienta%29-7135019.jpg" />
+    <Content Include="hinhanh\pngtree-logout-icon-vectors-png-image_1737872.jpg" />
+    <Content Include="hinhanh\Red_Color.jpg" />
+    <Content Include="hinhanh\save.jpg" />
+    <Content Include="hinhanh\save.png" />
+    <Content Include="hinhanh\search.jpg" />
+    <Content Include="hinhanh\sua.jpg" />
+    <Content Include="hinhanh\sua1.jpg" />
+    <Content Include="hinhanh\xoa.png" />
+    <Content Include="hinhanh\xoa1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
