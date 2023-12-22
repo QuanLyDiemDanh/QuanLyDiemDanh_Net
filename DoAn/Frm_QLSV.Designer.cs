@@ -57,6 +57,7 @@ namespace DoAn
             this.txt_LopNienChe = new System.Windows.Forms.TextBox();
             this.cbbLopNienChe = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.txt_MaSv = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_SinhVien)).BeginInit();
             this.SuspendLayout();
             // 
@@ -194,13 +195,7 @@ namespace DoAn
             // 
             // colMaSV
             // 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
             this.colMaSV.DataPropertyName = "MaSinhVien";
-=======
->>>>>>> c68fe0c687e041c01f2eec89646b2874423b3a6d
->>>>>>> Stashed changes
             this.colMaSV.HeaderText = "Mã Sinh Viên";
             this.colMaSV.MinimumWidth = 6;
             this.colMaSV.Name = "colMaSV";
@@ -209,13 +204,7 @@ namespace DoAn
             // 
             // colHoTen
             // 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
             this.colHoTen.DataPropertyName = "HoTenSinhVien";
-=======
->>>>>>> c68fe0c687e041c01f2eec89646b2874423b3a6d
->>>>>>> Stashed changes
             this.colHoTen.HeaderText = "Họ Tên Sinh Viên";
             this.colHoTen.MinimumWidth = 6;
             this.colHoTen.Name = "colHoTen";
@@ -224,13 +213,7 @@ namespace DoAn
             // 
             // colNgaySinh
             // 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
             this.colNgaySinh.DataPropertyName = "NgaySinh";
-=======
->>>>>>> c68fe0c687e041c01f2eec89646b2874423b3a6d
->>>>>>> Stashed changes
             this.colNgaySinh.HeaderText = "Ngày Sinh";
             this.colNgaySinh.MinimumWidth = 6;
             this.colNgaySinh.Name = "colNgaySinh";
@@ -239,13 +222,7 @@ namespace DoAn
             // 
             // GioiTinh
             // 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
             this.GioiTinh.DataPropertyName = "GioiTinh";
-=======
->>>>>>> c68fe0c687e041c01f2eec89646b2874423b3a6d
->>>>>>> Stashed changes
             this.GioiTinh.HeaderText = "Giới Tính";
             this.GioiTinh.MinimumWidth = 6;
             this.GioiTinh.Name = "GioiTinh";
@@ -254,13 +231,7 @@ namespace DoAn
             // 
             // colLopNC
             // 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
             this.colLopNC.DataPropertyName = "LopNienChe";
-=======
->>>>>>> c68fe0c687e041c01f2eec89646b2874423b3a6d
->>>>>>> Stashed changes
             this.colLopNC.HeaderText = "Lớp Niên Chế";
             this.colLopNC.MinimumWidth = 6;
             this.colLopNC.Name = "colLopNC";
@@ -281,7 +252,6 @@ namespace DoAn
             this.btnthem.Text = "Thêm";
             this.btnthem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnthem.UseVisualStyleBackColor = false;
-            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
             // btnxoa
             // 
@@ -358,16 +328,9 @@ namespace DoAn
             this.search.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.Location = new System.Drawing.Point(267, 392);
             this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(227, 23);
+            this.search.Size = new System.Drawing.Size(167, 23);
             this.search.TabIndex = 21;
-<<<<<<< HEAD
-            this.search.Text = "Chọn lớp để xem sinh viên";
-=======
             this.search.Text = "Tìm kiếm sinh viên";
-<<<<<<< Updated upstream
-=======
->>>>>>> c68fe0c687e041c01f2eec89646b2874423b3a6d
->>>>>>> Stashed changes
             // 
             // txt_LopNienChe
             // 
@@ -399,6 +362,14 @@ namespace DoAn
             this.label8.TabIndex = 21;
             this.label8.Text = "Tìm kiếm theo mã sinh viên";
             // 
+            // txt_MaSv
+            // 
+            this.txt_MaSv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_MaSv.Location = new System.Drawing.Point(12, 54);
+            this.txt_MaSv.Name = "txt_MaSv";
+            this.txt_MaSv.Size = new System.Drawing.Size(219, 30);
+            this.txt_MaSv.TabIndex = 1;
+            // 
             // Frm_QLSV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -420,6 +391,7 @@ namespace DoAn
             this.Controls.Add(this.txt_LopNienChe);
             this.Controls.Add(this.txt_HoTen);
             this.Controls.Add(this.txt_Pass);
+            this.Controls.Add(this.txt_MaSv);
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -467,5 +439,6 @@ namespace DoAn
         private System.Windows.Forms.DataGridViewTextBoxColumn colLopNC;
         private System.Windows.Forms.ComboBox cbbLopNienChe;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txt_MaSv;
     }
 }

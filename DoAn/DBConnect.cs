@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace DoAn
 {
     class DBConnect
     {
-        private static string stringConnection = @"Data Source=LAPTOP-GGGJGJI6\SQLBYDAU;Initial Catalog= DDSV_Last;Integrated Security=True";
+        private static string stringConnection = @"Data Source=LAPTOP-GSL3DJO2;Initial Catalog= DDSV_Last;Integrated Security=True";
         public static SqlConnection GetSqlConnection()
         {
             return new SqlConnection(stringConnection);
@@ -23,6 +19,7 @@ namespace DoAn
             get { return connect; }
             set { connect = value; }
         }
+
         public DBConnect()
         {
             connect = new SqlConnection(stringConnection);
@@ -34,7 +31,7 @@ namespace DoAn
                 connect.Open();
         }
 
-        public void close() 
+        public void close()
         {
             if (connect.State == ConnectionState.Open)
                 connect.Close();
@@ -81,15 +78,9 @@ namespace DoAn
             int kq = da.Update(dt);
             return kq;
         }
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
 
-=======
->>>>>>> Stashed changes
         public int executeNonQuery(string sql)
         {
-            SqlCommand cmd = new SqlCommand(sql, connect);
             int rowsAffected = 0;
 
             try
@@ -97,20 +88,17 @@ namespace DoAn
                 open();
                 SqlCommand query = new SqlCommand(sql, connect);
                 rowsAffected = query.ExecuteNonQuery();
-                close();
             }
             catch (Exception ex)
             {
                 throw new Exception("Lỗi khi thực hiện truy vấn: " + ex.Message);
             }
+            finally
+            {
+                close();
+            }
 
             return rowsAffected;
         }
-
-        
-<<<<<<< Updated upstream
-=======
->>>>>>> c68fe0c687e041c01f2eec89646b2874423b3a6d
->>>>>>> Stashed changes
     }
 }
