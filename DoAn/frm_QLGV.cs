@@ -37,7 +37,7 @@ namespace DoAn
             }
             dataGridGV.DataSource = dt;
         }
-
+        //-------------------------------HỦY----------------------------------------------
         private void btn_huy_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn thoát không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -56,32 +56,7 @@ namespace DoAn
             //this.WindowState = FormWindowState.Maximized;
 
         }
-
-        //public DataTable SearchTeacherByCode(string teacherCode)
-        //{
-        //    DataTable dataTable = new DataTable();
-
-        //    using (SqlConnection connection = new SqlConnection(stringConnection))
-        //    {
-        //        try
-        //        {
-        //            connection.Open();
-        //            string query = "SELECT * FROM GiangVien WHERE MaGiangVien = @MaGiangVien";
-        //            SqlCommand command = new SqlCommand(query, connection);
-        //            command.Parameters.AddWithValue("@MaGiangVien", teacherCode);
-
-        //            SqlDataAdapter adapter = new SqlDataAdapter(command);
-        //            adapter.Fill(dataTable);
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            // Xử lý exception nếu có
-        //            // Ví dụ: throw ex; hoặc xử lý thông báo lỗi
-        //        }
-        //    }
-
-        //    return dataTable;
-        //}
+//-------------------------------TÌM----------------------------------------------
         private void btn_tim_Click(object sender, EventArgs e)
         {
             string MaGiangVien = txt_tim.Text.Trim();
@@ -128,17 +103,73 @@ namespace DoAn
             // Hiển thị dữ liệu trong DataGridView
             dataGridGV.DataSource = originalDataTable;
         }
+        
+        //-------------------------------HIỂN THỊ----------------------------------------------
         private void btn_hienthi_Click(object sender, EventArgs e)
         {
             if (originalDataTable != null)
             {
                 // Khôi phục dữ liệu ban đầu bằng cách gán lại giá trị của bản sao cho DataGridView
                 dataGridGV.DataSource = originalDataTable.Copy();
-                MessageBox.Show("Đã hiển thị tất cả danh sách Giảng Viên!");
+                MessageBox.Show("Đã hiển thị danh sách Giảng Viên!");
             }
             else
             {
                 MessageBox.Show("Lỗi! Không thể hiển thị");
+            }
+        }
+
+
+        //-------------------------------THÊM----------------------------------------------
+        private void btn_them_Click(object sender, EventArgs e)
+        {
+            // Lấy giá trị từ các ô textbox
+            string MaGiangVien = txt_ma.Text.Trim();
+            string Password = txt_pass.Text.Trim();
+            string HoVaTen = txt_hovaten.Text.Trim();
+            string TrinhDo = txt_trinhdo.Text.Trim();
+            string ChuyenMon = txt_chuyenmon.Text.Trim();
+
+            // Kiểm tra nếu một trong các ô textbox rỗng thì thông báo và không thêm vào cơ sở dữ liệu
+            if (!string.IsNullOrEmpty(MaGiangVien) && !string.IsNullOrEmpty(Password) && !string.IsNullOrEmpty(HoVaTen) && !string.IsNullOrEmpty(TrinhDo) && !string.IsNullOrEmpty(ChuyenMon))
+            {
+                try
+                {
+                    // Thực hiện thêm dữ liệu vào cơ sở dữ liệu thông qua lớp DBConnect
+                    DBConnect dbConnect = new DBConnect();
+                    string query = "INSERT INTO GiangVien (MaGiangVien, Password, HoVaTen, TrinhDo, ChuyenMon) VALUES (@MaGiangVien, @Password, @HoTenGiangVien, @TrinhDo, @ChuyenMon)";
+
+                    SqlCommand command = new SqlCommand(query); // Khởi tạo SqlCommand
+                    command.Parameters.AddWithValue("@MaGiangVien", MaGiangVien);
+                    command.Parameters.AddWithValue("@Password", Password);
+                    command.Parameters.AddWithValue("@HoTenGiangVien", HoVaTen);
+                    command.Parameters.AddWithValue("@TrinhDo", TrinhDo);
+                    command.Parameters.AddWithValue("@ChuyenMon", ChuyenMon);
+
+                    int rowsAffected = dbConnect.executeNonQuery(query); // Truyền đối tượng SqlCommand vào hàm executeNonQuery
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Đã thêm dữ liệu vào cơ sở dữ liệu!");
+
+                        // Cập nhật DataGridView sau khi thêm dữ liệu
+                        string selectQuery = "SELECT * FROM GiangVien";
+                        DataTable dataTable = dbConnect.getDataTable(selectQuery);
+                        dataGridGV.DataSource = dataTable;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không thể thêm dữ liệu vào cơ sở dữ liệu!");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi thêm dữ liệu: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin để thêm dữ liệu!");
             }
         }
     }

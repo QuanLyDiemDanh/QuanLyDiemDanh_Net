@@ -32,7 +32,6 @@ C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.
 C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\QuanLyDiemDanh_Net\DoAn\bin\Debug\DoAn.exe.config
 C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\QuanLyDiemDanh_Net\DoAn\bin\Debug\DoAn.exe
 C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\QuanLyDiemDanh_Net\DoAn\bin\Debug\DoAn.pdb
-C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.csproj.AssemblyReference.cache
 C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.FrmDangNhap.resources
 C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.FrmKhoa.resources
 C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.frm_GiangVien.resources
@@ -46,3 +45,4 @@ C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\QuanLyDiemDanh_Net\DoAn\o
 C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.exe
 C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.pdb
 C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.frm_QLGV.resources
+C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.csproj.AssemblyReference.cache

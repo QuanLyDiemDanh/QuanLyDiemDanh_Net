@@ -81,5 +81,26 @@ namespace DoAn
             int kq = da.Update(dt);
             return kq;
         }
+        public int executeNonQuery(string sql)
+        {
+            SqlCommand cmd = new SqlCommand(sql, connect);
+            int rowsAffected = 0;
+
+            try
+            {
+                open();
+                SqlCommand command = new SqlCommand(sql, connect);
+                rowsAffected = command.ExecuteNonQuery();
+                close();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi khi thực hiện truy vấn: " + ex.Message);
+            }
+
+            return rowsAffected;
+        }
+
+        
     }
 }

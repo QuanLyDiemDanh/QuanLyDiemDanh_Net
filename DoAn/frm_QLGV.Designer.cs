@@ -324,6 +324,7 @@ namespace DoAn
             this.btn_them.TabIndex = 20;
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // btn_hienthi
             // 
