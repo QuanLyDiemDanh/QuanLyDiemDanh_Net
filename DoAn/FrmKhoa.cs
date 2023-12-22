@@ -24,7 +24,17 @@ namespace DoAn
 
         private void quảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (!checkExitsForm("frm_QLGV"))
+            {
+                frm_QLGV frm = new frm_QLGV();
+                frm.MdiParent = this;
+                frm.Name = "frm_QLGV";
+                frm.Show();
+            }
+            else
+            {
+                ActiveChildForm("frm_QLGV");
+            }
         }
 
         private void quảnLýTàiKhoảnSinhVienToolStripMenuItem_Click(object sender, EventArgs e)

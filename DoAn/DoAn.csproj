@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DoAn</RootNamespace>
     <AssemblyName>DoAn</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -64,6 +64,12 @@
     <Compile Include="frm_GV_DiemDanh.Designer.cs">
       <DependentUpon>frm_GV_DiemDanh.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_QLGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLGV.Designer.cs">
+      <DependentUpon>frm_QLGV.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_QLSV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_GV_DiemDanh.resx">
       <DependentUpon>frm_GV_DiemDanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QLGV.resx">
+      <DependentUpon>frm_QLGV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_QLSV.resx">
       <DependentUpon>Frm_QLSV.cs</DependentUpon>
@@ -174,6 +183,8 @@
     <Content Include="hinhanh\sua1.jpg" />
     <Content Include="hinhanh\xoa.png" />
     <Content Include="hinhanh\xoa1.png" />
+    <None Include="Resources\tet2.jpg" />
+    <None Include="Resources\tet6.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
