@@ -357,6 +357,7 @@ namespace DoAn
             this.Controls.Add(this.dataGridGV);
             this.Name = "frm_QLGV";
             this.Text = "frm_QLGV";
+            this.Load += new System.EventHandler(this.frm_QLGV_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridGV)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

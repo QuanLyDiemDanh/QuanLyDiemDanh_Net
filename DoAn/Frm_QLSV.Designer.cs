@@ -42,6 +42,11 @@ namespace DoAn
             this.cbb_GioiTinh = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridView_SinhVien = new System.Windows.Forms.DataGridView();
+            this.colMaSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colHoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLopNC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnthem = new System.Windows.Forms.Button();
             this.btnxoa = new System.Windows.Forms.Button();
             this.btnupdate = new System.Windows.Forms.Button();
@@ -50,11 +55,6 @@ namespace DoAn
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.search = new System.Windows.Forms.Label();
-            this.colMaSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colHoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colLopNC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txt_LopNienChe = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_SinhVien)).BeginInit();
             this.SuspendLayout();
@@ -171,7 +171,7 @@ namespace DoAn
             this.label7.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(389, 20);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(396, 38);
+            this.label7.Size = new System.Drawing.Size(384, 37);
             this.label7.TabIndex = 7;
             this.label7.Text = "THÔNG TIN SINH VIÊN";
             // 
@@ -190,6 +190,46 @@ namespace DoAn
             this.dataGridView_SinhVien.RowTemplate.Height = 24;
             this.dataGridView_SinhVien.Size = new System.Drawing.Size(648, 309);
             this.dataGridView_SinhVien.TabIndex = 8;
+            // 
+            // colMaSV
+            // 
+            this.colMaSV.HeaderText = "Mã Sinh Viên";
+            this.colMaSV.MinimumWidth = 6;
+            this.colMaSV.Name = "colMaSV";
+            this.colMaSV.ReadOnly = true;
+            this.colMaSV.Width = 90;
+            // 
+            // colHoTen
+            // 
+            this.colHoTen.HeaderText = "Họ Tên Sinh Viên";
+            this.colHoTen.MinimumWidth = 6;
+            this.colHoTen.Name = "colHoTen";
+            this.colHoTen.ReadOnly = true;
+            this.colHoTen.Width = 150;
+            // 
+            // colNgaySinh
+            // 
+            this.colNgaySinh.HeaderText = "Ngày Sinh";
+            this.colNgaySinh.MinimumWidth = 6;
+            this.colNgaySinh.Name = "colNgaySinh";
+            this.colNgaySinh.ReadOnly = true;
+            this.colNgaySinh.Width = 125;
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.HeaderText = "Giới Tính";
+            this.GioiTinh.MinimumWidth = 6;
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.ReadOnly = true;
+            this.GioiTinh.Width = 75;
+            // 
+            // colLopNC
+            // 
+            this.colLopNC.HeaderText = "Lớp Niên Chế";
+            this.colLopNC.MinimumWidth = 6;
+            this.colLopNC.Name = "colLopNC";
+            this.colLopNC.ReadOnly = true;
+            this.colLopNC.Width = 125;
             // 
             // btnthem
             // 
@@ -244,6 +284,7 @@ namespace DoAn
             this.btnhuy.Text = "Hủy";
             this.btnhuy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnhuy.UseVisualStyleBackColor = false;
+            this.btnhuy.Click += new System.EventHandler(this.btnhuy_Click);
             // 
             // btn_HienThiALL
             // 
@@ -289,46 +330,6 @@ namespace DoAn
             this.search.Size = new System.Drawing.Size(167, 23);
             this.search.TabIndex = 21;
             this.search.Text = "Tìm kiếm sinh viên";
-            // 
-            // colMaSV
-            // 
-            this.colMaSV.HeaderText = "Mã Sinh Viên";
-            this.colMaSV.MinimumWidth = 6;
-            this.colMaSV.Name = "colMaSV";
-            this.colMaSV.ReadOnly = true;
-            this.colMaSV.Width = 90;
-            // 
-            // colHoTen
-            // 
-            this.colHoTen.HeaderText = "Họ Tên Sinh Viên";
-            this.colHoTen.MinimumWidth = 6;
-            this.colHoTen.Name = "colHoTen";
-            this.colHoTen.ReadOnly = true;
-            this.colHoTen.Width = 150;
-            // 
-            // colNgaySinh
-            // 
-            this.colNgaySinh.HeaderText = "Ngày Sinh";
-            this.colNgaySinh.MinimumWidth = 6;
-            this.colNgaySinh.Name = "colNgaySinh";
-            this.colNgaySinh.ReadOnly = true;
-            this.colNgaySinh.Width = 125;
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.HeaderText = "Giới Tính";
-            this.GioiTinh.MinimumWidth = 6;
-            this.GioiTinh.Name = "GioiTinh";
-            this.GioiTinh.ReadOnly = true;
-            this.GioiTinh.Width = 75;
-            // 
-            // colLopNC
-            // 
-            this.colLopNC.HeaderText = "Lớp Niên Chế";
-            this.colLopNC.MinimumWidth = 6;
-            this.colLopNC.Name = "colLopNC";
-            this.colLopNC.ReadOnly = true;
-            this.colLopNC.Width = 125;
             // 
             // txt_LopNienChe
             // 

@@ -16,6 +16,7 @@ namespace DoAn
         public Frm_QLSV()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void Frm_QLSV_Load(object sender, EventArgs e)
@@ -23,7 +24,7 @@ namespace DoAn
             cbb_GioiTinh.Items.Add("Nam");
             cbb_GioiTinh.Items.Add("Nu");
             loadData();
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
         }
 
         void loadData()
@@ -40,6 +41,18 @@ namespace DoAn
                 sv.LopNienChe = i["LopNienChe"].ToString();
             }
             dataGridView_SinhVien.DataSource = dt;
+        }
+
+        private void btnhuy_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn thoát không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (dialogResult == DialogResult.Yes)
+            {
+                FrmKhoa secondForm = new FrmKhoa(); // Tạo instance của SecondForm
+                secondForm.Show(); // Hiển thị SecondForm
+                this.Hide(); // Ẩn MainForm
+            }
         }
     }
 }
