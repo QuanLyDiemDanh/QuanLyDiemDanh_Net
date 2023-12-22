@@ -334,6 +334,7 @@ namespace DoAn
             this.btn_hienthi.TabIndex = 18;
             this.btn_hienthi.Text = "Hiển thị tất cả";
             this.btn_hienthi.UseVisualStyleBackColor = true;
+            this.btn_hienthi.Click += new System.EventHandler(this.btn_hienthi_Click);
             // 
             // btn_tim
             // 
@@ -344,6 +345,7 @@ namespace DoAn
             this.btn_tim.TabIndex = 17;
             this.btn_tim.Text = "Tìm";
             this.btn_tim.UseVisualStyleBackColor = true;
+            this.btn_tim.Click += new System.EventHandler(this.btn_tim_Click);
             // 
             // frm_QLGV
             // 
