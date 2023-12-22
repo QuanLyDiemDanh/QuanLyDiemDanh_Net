@@ -26,3 +26,6 @@ C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.
 C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\DoAn\bin\Debug\DoAn.exe.config
 C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\DoAn\bin\Debug\DoAn.exe
 C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\DoAn\bin\Debug\DoAn.pdb
+C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.csproj.AssemblyReference.cache
+C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.FrmKhoa.resources
+C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.Frm_QLSV.resources

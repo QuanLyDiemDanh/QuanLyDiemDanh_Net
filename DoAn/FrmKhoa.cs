@@ -27,21 +27,6 @@ namespace DoAn
 
         }
 
-        //private void phânCôngGiảngViênToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    if (!checkExitsForm("FrmQuanLyMonHoc"))
-        //    {
-        //        FrmQuanLyMonHoc frm = new FrmQuanLyMonHoc();
-        //        frm.MdiParent = this;
-        //        frm.Name = "FrmQuanLyMonHoc";
-        //        frm.Show();
-        //    }
-        //    else
-        //    {
-        //        ActiveChildForm("FrmQuanLyMonHoc");
-        //    }
-        //}
-
         private void quảnLýTàiKhoảnSinhVienToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -49,7 +34,7 @@ namespace DoAn
 
         private void FrmAdmin_Load(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
@@ -97,23 +82,6 @@ namespace DoAn
                 }
             }
         }
-
-        //private void tsQuanLySV_Click(object sender, EventArgs e)
-        //{
-        //    if (!checkExitsForm("FrmQuanLySV"))
-        //    {
-        //        FrmQuanLySV frm = new FrmQuanLySV();
-        //        frm.MdiParent = this;
-        //        frm.Name = "FrmQuanLySV";
-        //        frm.Show();
-        //    }
-        //    else
-        //    {
-        //        ActiveChildForm("FrmQuanLySV");
-        //    }
-
-        //}
-
         private void quảnLýTàiKhoảnGiảngViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -124,73 +92,27 @@ namespace DoAn
 
         }
 
-        //private void quảnLýTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-
-        //    if (!checkExitsForm("FrmQuanLyTaiKhoanGV"))
-        //    {
-        //        FrmQuanLyTaiKhoanGV frm = new FrmQuanLyTaiKhoanGV();
-        //        frm.MdiParent = this;
-        //        frm.Name = "FrmQuanLyTaiKhoanGV";
-        //        frm.Show();
-        //    }
-        //    else
-        //    {
-        //        ActiveChildForm("FrmQuanLyTaiKhoanGV");
-        //    }
-        //}
-
-        //private void tsThemGV_Click(object sender, EventArgs e)
-        //{
-        //    if (!checkExitsForm("FrmQuanLyGiangVien"))
-        //    {
-        //        FrmQuanLyGiangVien frm = new FrmQuanLyGiangVien();
-        //        frm.MdiParent = this;
-        //        frm.Name = "FrmQuanLyGiangVien";
-        //        frm.Show();
-        //    }
-        //    else
-        //    {
-        //        ActiveChildForm("FrmQuanLyGiangVien");
-        //    }
-        //}
+        
 
         private void quảnLýLớpHọcToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void tsQuanLySV_Click(object sender, EventArgs e)
+        {
+            if (!checkExitsForm("Frm_QLSV"))
+            {
+                Frm_QLSV frm = new Frm_QLSV();
+                frm.MdiParent = this;
+                frm.Name = "FrmQuanLySV";
+                frm.Show();
+            }
+            else
+            {
+                ActiveChildForm("FrmQuanLySV");
+            }
+        }
     }
 }
-    //    private void tạoVàXemBáoCáoĐiểmDanhToolStripMenuItem_Click(object sender, EventArgs e)
-    //    {
-    //        if (this != null) // Kiểm tra xem đối tượng 'this' có khác null không
-    //        {
-    //            if (!checkExitsForm("FrmDiemDanh"))
-    //            {
-    //                FrmBaoCao frm = new FrmBaoCao();
-    //                frm.MdiParent = this;
-    //                frm.Name = "FrmDiemDanh";
-    //                frm.Show();
-    //            }
-    //            else
-    //            {
-    //                ActiveChildForm("FrmDiemDanh");
-    //            }
-    //        }
-    //    }
-
-//    private void quảnLýLớpHọcToolStripMenuItem1_Click(object sender, EventArgs e)
-//    {
-//        if (!checkExitsForm("FrmQuanLyLop"))
-//        {
-//            FrmQuanLyLop frm = new FrmQuanLyLop();
-//            frm.MdiParent = this;
-//            frm.Name = "FrmQuanLyLop";
-//            frm.Show();
-//        }
-//        else
-//        {
-//            ActiveChildForm("FrmQuanLyLop");
-//        }
-//    }
-//}
+   
