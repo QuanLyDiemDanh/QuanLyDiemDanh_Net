@@ -123,53 +123,73 @@ namespace DoAn
         //-------------------------------THÊM----------------------------------------------
         private void btn_them_Click(object sender, EventArgs e)
         {
-            // Lấy giá trị từ các ô textbox
-            string MaGiangVien = txt_ma.Text.Trim();
-            string Password = txt_pass.Text.Trim();
-            string HoVaTen = txt_hovaten.Text.Trim();
-            string TrinhDo = txt_trinhdo.Text.Trim();
-            string ChuyenMon = txt_chuyenmon.Text.Trim();
-
-            // Kiểm tra nếu một trong các ô textbox rỗng thì thông báo và không thêm vào cơ sở dữ liệu
-            if (!string.IsNullOrEmpty(MaGiangVien) && !string.IsNullOrEmpty(Password) && !string.IsNullOrEmpty(HoVaTen) && !string.IsNullOrEmpty(TrinhDo) && !string.IsNullOrEmpty(ChuyenMon))
+            try
             {
-                try
+                string maGiangVien = txt_ma.Text.Trim();
+                string password = txt_pass.Text.Trim();
+                string hoVaTen = txt_hovaten.Text.Trim();
+                string trinhDo = txt_trinhdo.Text.Trim();
+                string chuyenMon = txt_chuyenmon.Text.Trim();
+
+                // Kiểm tra và thêm dữ liệu vào DataTable hoặc Database trực tiếp ở đây
+
+                // Ví dụ: Thêm vào DataTable trước
+                DataTable dataTable = new DataTable(); // Khởi tạo hoặc lấy từ DataGridView nếu đã có dữ liệu
+                DataRow newRow = dataTable.NewRow();
+                newRow["MaGiangVien"] = maGiangVien;
+                newRow["Password"] = password;
+                newRow["HoTenGiangVien"] = hoVaTen;
+                newRow["TrinhDo"] = trinhDo;
+                newRow["ChuyenMon"] = chuyenMon;
+                dataTable.Rows.Add(newRow);
+
+                // Cập nhật DataGridView
+                dataGridGV.DataSource = dataTable;
+
+                // Lưu vào Database thông qua lớp DBConnect
+                DBConnect dbConnect = new DBConnect();
+                string query = "INSERT INTO GiangVien (MaGiangVien, Password, HoTenGiangVien, TrinhDo, ChuyenMon) VALUES ('" + maGiangVien + "', '" + password + "', '" + hoVaTen + "', '" + trinhDo + "', '" + chuyenMon + "')";
+
+                int rowsAffected = dbConnect.executeNonQuery(query);
+                if (rowsAffected > 0)
                 {
-                    // Thực hiện thêm dữ liệu vào cơ sở dữ liệu thông qua lớp DBConnect
-                    DBConnect dbConnect = new DBConnect();
-                    string query = "INSERT INTO GiangVien (MaGiangVien, Password, HoVaTen, TrinhDo, ChuyenMon) VALUES (@MaGiangVien, @Password, @HoTenGiangVien, @TrinhDo, @ChuyenMon)";
-
-                    SqlCommand command = new SqlCommand(query); // Khởi tạo SqlCommand
-                    command.Parameters.AddWithValue("@MaGiangVien", MaGiangVien);
-                    command.Parameters.AddWithValue("@Password", Password);
-                    command.Parameters.AddWithValue("@HoTenGiangVien", HoVaTen);
-                    command.Parameters.AddWithValue("@TrinhDo", TrinhDo);
-                    command.Parameters.AddWithValue("@ChuyenMon", ChuyenMon);
-
-                    int rowsAffected = dbConnect.executeNonQuery(query); // Truyền đối tượng SqlCommand vào hàm executeNonQuery
-
-                    if (rowsAffected > 0)
-                    {
-                        MessageBox.Show("Đã thêm dữ liệu vào cơ sở dữ liệu!");
-
-                        // Cập nhật DataGridView sau khi thêm dữ liệu
-                        string selectQuery = "SELECT * FROM GiangVien";
-                        DataTable dataTable = dbConnect.getDataTable(selectQuery);
-                        dataGridGV.DataSource = dataTable;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Không thể thêm dữ liệu vào cơ sở dữ liệu!");
-                    }
+                    MessageBox.Show("Đã thêm dữ liệu thành công vào CSDL!");
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show("Lỗi khi thêm dữ liệu: " + ex.Message);
+                    MessageBox.Show("Không thể thêm dữ liệu vào CSDL!");
                 }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin để thêm dữ liệu!");
+                MessageBox.Show("Lỗi khi thêm dữ liệu: " + ex.Message);
+            }
+        }
+
+        private void btn_xoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Lấy mã giáo viên cần xóa từ DataGridView hoặc TextBox hoặc control tương ứng
+                string maGiangVienToDelete = txt_ma.Text.Trim(); // Thay thế bằng control hoặc điều kiện tương ứng
+
+                // Xác định và thực hiện xóa dữ liệu thông qua DBConnect
+                DBConnect dbConnect = new DBConnect();
+                string query = "DELETE FROM GiangVien WHERE MaGiangVien = '" + maGiangVienToDelete + "'";
+
+                int rowsAffected = dbConnect.executeNonQuery(query);
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Đã xóa dữ liệu thành công từ CSDL!");
+                }
+                else
+                {
+                    MessageBox.Show("Không thể xóa dữ liệu từ CSDL!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi xóa dữ liệu: " + ex.Message);
             }
         }
     }

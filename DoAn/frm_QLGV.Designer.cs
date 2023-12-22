@@ -314,6 +314,7 @@ namespace DoAn
             this.btn_xoa.TabIndex = 21;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_them
             // 

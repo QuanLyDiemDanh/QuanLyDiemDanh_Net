@@ -89,8 +89,8 @@ namespace DoAn
             try
             {
                 open();
-                SqlCommand command = new SqlCommand(sql, connect);
-                rowsAffected = command.ExecuteNonQuery();
+                SqlCommand query = new SqlCommand(sql, connect);
+                rowsAffected = query.ExecuteNonQuery();
                 close();
             }
             catch (Exception ex)
