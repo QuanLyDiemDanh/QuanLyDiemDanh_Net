@@ -81,6 +81,12 @@ namespace DoAn
             int kq = da.Update(dt);
             return kq;
         }
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> Stashed changes
         public int executeNonQuery(string sql)
         {
             SqlCommand cmd = new SqlCommand(sql, connect);
@@ -102,5 +108,9 @@ namespace DoAn
         }
 
         
+<<<<<<< Updated upstream
+=======
+>>>>>>> c68fe0c687e041c01f2eec89646b2874423b3a6d
+>>>>>>> Stashed changes
     }
 }

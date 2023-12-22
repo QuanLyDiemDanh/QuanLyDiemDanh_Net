@@ -17,6 +17,7 @@ namespace DoAn
         DBConnect db = new DBConnect();
         public FrmDangNhap()
         {
+            
             InitializeComponent();
             SetDefaultButton();
         }
@@ -96,7 +97,7 @@ namespace DoAn
 
         private void FrmDangNhap_Load(object sender, EventArgs e)
         {
-
+            
         }
         private void SetDefaultButton()
         {
