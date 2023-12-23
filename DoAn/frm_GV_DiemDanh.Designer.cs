@@ -171,13 +171,14 @@ namespace DoAn
             // ketquadiemdanh
             // 
             this.ketquadiemdanh.Name = "ketquadiemdanh";
-            this.ketquadiemdanh.Size = new System.Drawing.Size(218, 26);
+            this.ketquadiemdanh.Size = new System.Drawing.Size(224, 26);
             this.ketquadiemdanh.Text = "Kết quả điểm danh";
+            this.ketquadiemdanh.Click += new System.EventHandler(this.ketquadiemdanh_Click);
             // 
             // dangxuatMenuStrip
             // 
             this.dangxuatMenuStrip.Name = "dangxuatMenuStrip";
-            this.dangxuatMenuStrip.Size = new System.Drawing.Size(218, 26);
+            this.dangxuatMenuStrip.Size = new System.Drawing.Size(224, 26);
             this.dangxuatMenuStrip.Text = "Thoát";
             this.dangxuatMenuStrip.Click += new System.EventHandler(this.dangxuatMenuStrip_Click);
             // 
@@ -196,7 +197,6 @@ namespace DoAn
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
             //this.Name = "frm_GV_DiemDanh";
-            this.Text = "frm_GV_DiemDanh";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_GV_DiemDanh_FormClosing);
             this.Load += new System.EventHandler(this.frm_GV_DiemDanh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

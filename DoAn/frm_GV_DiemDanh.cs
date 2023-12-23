@@ -98,10 +98,14 @@ namespace DoAn
             else
                 MessageBox.Show("Cập nhật điểm danh thành công");
         }
-        public event EventHandler DangXuat;
+        //public event EventHandler DangXuat;
         private void dangxuatMenuStrip_Click(object sender, EventArgs e)
         {
-            DangXuat(this, new EventArgs());
+            frm_GiangVien f = new frm_GiangVien();
+            f.getID(Magv);
+            f.Show();
+            this.Hide();
+            f.Show();
         }
       
         private void frm_GV_DiemDanh_FormClosing(object sender, FormClosingEventArgs e)
@@ -113,6 +117,9 @@ namespace DoAn
             //    e.Cancel = true;
         }
 
+        private void ketquadiemdanh_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

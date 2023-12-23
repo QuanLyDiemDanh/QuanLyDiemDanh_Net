@@ -130,7 +130,6 @@ namespace DoAn
             (sender as ThongTinGiangVien).isThoat = false;
             (sender as ThongTinGiangVien).Close();
             this.Show();
-
         }
     }
 }
