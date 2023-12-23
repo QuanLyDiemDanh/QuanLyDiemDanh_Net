@@ -82,12 +82,18 @@ namespace DoAn
 
         private void frm_SinhVien_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (isThoat)
-                Application.Exit();
+            
         }
         private void logout_Click(object sender, EventArgs e)
         {
-            DangXuat(this, new EventArgs());
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn đăng xuất?", "Xác nhận đăng xuất", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                // Thực hiện các bước đăng xuất, ví dụ: đóng form hiện tại
+                this.Hide();
+                new FrmDangNhap().Show();
+            }
         }
 
         //private void info_Click(object sender, EventArgs e)

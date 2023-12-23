@@ -40,7 +40,6 @@
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.NameMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.InfoMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
-            this.ChangePasswordMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.LogoutMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.cbo_Lop = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.grd_LopGiangDay)).BeginInit();
@@ -51,10 +50,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(319, 152);
+            this.label1.Location = new System.Drawing.Point(379, 165);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(349, 32);
+            this.label1.Size = new System.Drawing.Size(350, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Danh sách lớp giảng dạy";
             // 
@@ -115,8 +115,9 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(310, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(661, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(368, 90);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -154,7 +155,6 @@
             this.NameMenuStrip.CheckState = System.Windows.Forms.CheckState.Checked;
             this.NameMenuStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.InfoMenuStrip,
-            this.ChangePasswordMenuStrip,
             this.LogoutMenuStrip});
             this.NameMenuStrip.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.NameMenuStrip.ForeColor = System.Drawing.Color.Black;
@@ -168,12 +168,6 @@
             this.InfoMenuStrip.Size = new System.Drawing.Size(234, 28);
             this.InfoMenuStrip.Text = "Thông tin cá nhân";
             this.InfoMenuStrip.Click += new System.EventHandler(this.InfoMenuStrip_Click);
-            // 
-            // ChangePasswordMenuStrip
-            // 
-            this.ChangePasswordMenuStrip.Name = "ChangePasswordMenuStrip";
-            this.ChangePasswordMenuStrip.Size = new System.Drawing.Size(234, 28);
-            this.ChangePasswordMenuStrip.Text = "Đổi mật khẩu";
             // 
             // LogoutMenuStrip
             // 
@@ -194,6 +188,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::DoAn.Properties.Resources.bgrTet;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1041, 486);
             this.Controls.Add(this.cbo_Lop);
             this.Controls.Add(this.btn_ChonLop);
@@ -227,7 +223,6 @@
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem NameMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem InfoMenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem ChangePasswordMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem LogoutMenuStrip;
         private System.Windows.Forms.ComboBox cbo_Lop;
     }

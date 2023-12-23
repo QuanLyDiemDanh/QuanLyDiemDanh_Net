@@ -192,5 +192,10 @@ namespace DoAn
                 MessageBox.Show("Lỗi khi xóa dữ liệu: " + ex.Message);
             }
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
     }

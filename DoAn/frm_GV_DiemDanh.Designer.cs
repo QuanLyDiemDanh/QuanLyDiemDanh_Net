@@ -50,6 +50,7 @@ namespace DoAn
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(357, 31);
             this.pictureBox1.Name = "pictureBox1";
@@ -62,7 +63,7 @@ namespace DoAn
             // 
             this.cbo_NgayHoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cbo_NgayHoc.FormattingEnabled = true;
-            this.cbo_NgayHoc.Location = new System.Drawing.Point(12, 194);
+            this.cbo_NgayHoc.Location = new System.Drawing.Point(186, 199);
             this.cbo_NgayHoc.Name = "cbo_NgayHoc";
             this.cbo_NgayHoc.Size = new System.Drawing.Size(177, 28);
             this.cbo_NgayHoc.TabIndex = 5;
@@ -128,7 +129,7 @@ namespace DoAn
             // btn_ChonNgay
             // 
             this.btn_ChonNgay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_ChonNgay.Location = new System.Drawing.Point(210, 194);
+            this.btn_ChonNgay.Location = new System.Drawing.Point(369, 194);
             this.btn_ChonNgay.Name = "btn_ChonNgay";
             this.btn_ChonNgay.Size = new System.Drawing.Size(144, 37);
             this.btn_ChonNgay.TabIndex = 8;
@@ -154,7 +155,7 @@ namespace DoAn
             this.Name});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(1073, 30);
+            this.menuStrip.Size = new System.Drawing.Size(1073, 28);
             this.menuStrip.TabIndex = 10;
             this.menuStrip.Text = "menuStrip";
             // 
@@ -164,19 +165,19 @@ namespace DoAn
             this.ketquadiemdanh,
             this.dangxuatMenuStrip});
             this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(60, 26);
+            this.Name.Size = new System.Drawing.Size(60, 24);
             this.Name.Text = "Menu";
             // 
             // ketquadiemdanh
             // 
             this.ketquadiemdanh.Name = "ketquadiemdanh";
-            this.ketquadiemdanh.Size = new System.Drawing.Size(224, 26);
+            this.ketquadiemdanh.Size = new System.Drawing.Size(218, 26);
             this.ketquadiemdanh.Text = "Kết quả điểm danh";
             // 
             // dangxuatMenuStrip
             // 
             this.dangxuatMenuStrip.Name = "dangxuatMenuStrip";
-            this.dangxuatMenuStrip.Size = new System.Drawing.Size(224, 26);
+            this.dangxuatMenuStrip.Size = new System.Drawing.Size(218, 26);
             this.dangxuatMenuStrip.Text = "Thoát";
             this.dangxuatMenuStrip.Click += new System.EventHandler(this.dangxuatMenuStrip_Click);
             // 
@@ -184,6 +185,8 @@ namespace DoAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::DoAn.Properties.Resources.bgrTet1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1073, 566);
             this.Controls.Add(this.btn_Luu);
             this.Controls.Add(this.btn_ChonNgay);
@@ -192,6 +195,7 @@ namespace DoAn
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
+            //this.Name = "frm_GV_DiemDanh";
             this.Text = "frm_GV_DiemDanh";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_GV_DiemDanh_FormClosing);
             this.Load += new System.EventHandler(this.frm_GV_DiemDanh_Load);

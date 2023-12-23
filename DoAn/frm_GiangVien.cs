@@ -88,22 +88,33 @@ namespace DoAn
                 f.getMaGV(Id);
                 f.Show();
                 this.Hide();
-                f.DangXuat += f_DangXuat;
+                //f.DangXuat += f_DangXuat;
             }
 
         }
-        public event EventHandler DangXuat;
+        //public event EventHandler DangXuat;
         private void LogoutMenuStrip_Click(object sender, EventArgs e)
         {
-            DangXuat(this, new EventArgs());
-        }
-        void f_DangXuat(object sender, EventArgs e)
-        {
-            (sender as frm_GV_DiemDanh).isThoat = false;
-            (sender as frm_GV_DiemDanh).Close();
-            this.Show();
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn đăng xuất?", "Xác nhận đăng xuất", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+            if (result == DialogResult.Yes)
+            {
+                // Thực hiện các bước đăng xuất, ví dụ: đóng form hiện tại
+                this.Hide();
+                new FrmDangNhap().Show();
+            }
         }
+        //void f_DangXuat(object sender, EventArgs e)
+        //{
+        //    DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn đăng xuất?", "Xác nhận đăng xuất", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+        //    if (result == DialogResult.Yes)
+        //    {
+        //        // Thực hiện các bước đăng xuất, ví dụ: đóng form hiện tại
+        //        this.Hide();
+        //        new FrmDangNhap().Show();
+        //    }
+        //}
 
         private void InfoMenuStrip_Click(object sender, EventArgs e)
         {

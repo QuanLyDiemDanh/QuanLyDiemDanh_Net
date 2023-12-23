@@ -46,3 +46,4 @@ C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\QuanLyDiemDanh_Net\DoAn\o
 C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.frm_QLGV.resources
 C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.csproj.AssemblyReference.cache
 C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.frm_QLGV.resources
+C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.csproj.AssemblyReference.cache
