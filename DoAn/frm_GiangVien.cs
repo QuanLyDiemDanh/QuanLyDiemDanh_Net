@@ -131,5 +131,15 @@ namespace DoAn
             (sender as ThongTinGiangVien).Close();
             this.Show();
         }
+
+        private void NameMenuStrip_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void đổiTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

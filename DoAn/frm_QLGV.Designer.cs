@@ -55,6 +55,7 @@ namespace DoAn
             this.btn_tim = new System.Windows.Forms.Button();
             this.txt_tim = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridGV)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -377,5 +378,6 @@ namespace DoAn
         private System.Windows.Forms.Button btn_tim;
         private System.Windows.Forms.TextBox txt_tim;
         private System.Windows.Forms.Label label7;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

@@ -43,6 +43,8 @@
             this.menuiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ChangePassword = new System.Windows.Forms.ToolStripMenuItem();
             this.Exit = new System.Windows.Forms.ToolStripMenuItem();
+            this.butDoi = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -189,11 +191,22 @@
             this.Exit.Text = "Thoát";
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
+            // butDoi
+            // 
+            this.butDoi.Location = new System.Drawing.Point(51, 61);
+            this.butDoi.Name = "butDoi";
+            this.butDoi.Size = new System.Drawing.Size(164, 23);
+            this.butDoi.TabIndex = 12;
+            this.butDoi.Text = "Đổi Tài Khoản";
+            this.butDoi.UseVisualStyleBackColor = true;
+            this.butDoi.Click += new System.EventHandler(this.butDoi_Click);
+            // 
             // ThongTinGiangVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(916, 381);
+            this.Controls.Add(this.butDoi);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
@@ -227,5 +240,7 @@
         private System.Windows.Forms.ToolStripMenuItem menuiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ChangePassword;
         private System.Windows.Forms.ToolStripMenuItem Exit;
+        private System.Windows.Forms.Button butDoi;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

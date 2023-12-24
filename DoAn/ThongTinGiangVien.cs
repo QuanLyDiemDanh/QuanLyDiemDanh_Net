@@ -55,6 +55,9 @@ namespace DoAn
             loadThongTinGV();
         }
 
-        
+        private void butDoi_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

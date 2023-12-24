@@ -46,3 +46,21 @@ C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\QuanLyDiemDanh_Net\DoAn\o
 C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.frm_QLGV.resources
 C:\Users\daudu\source\repos\Code-Dau\Công nghệ .NET\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.csproj.AssemblyReference.cache
 C:\Users\kebao\OneDrive\Documents\Github\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.frm_QLGV.resources
+D:\BT\BT\QuanLyDiemDanh_Net\DoAn\bin\Debug\DoAn.exe.config
+D:\BT\BT\QuanLyDiemDanh_Net\DoAn\bin\Debug\DoAn.exe
+D:\BT\BT\QuanLyDiemDanh_Net\DoAn\bin\Debug\DoAn.pdb
+D:\BT\BT\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.csproj.AssemblyReference.cache
+D:\BT\BT\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.FrmDangNhap.resources
+D:\BT\BT\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.FrmKhoa.resources
+D:\BT\BT\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.frm_GiangVien.resources
+D:\BT\BT\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.frm_GV_DiemDanh.resources
+D:\BT\BT\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.frm_QLGV.resources
+D:\BT\BT\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.Frm_QLSV.resources
+D:\BT\BT\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.frm_SinhVien.resources
+D:\BT\BT\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.Properties.Resources.resources
+D:\BT\BT\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.ThongTinGiangVien.resources
+D:\BT\BT\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.csproj.GenerateResource.cache
+D:\BT\BT\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.csproj.CoreCompileInputs.cache
+D:\BT\BT\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.exe
+D:\BT\BT\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.pdb
+D:\BT\BT\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.TaiKHoanGV.resources

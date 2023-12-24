@@ -42,6 +42,7 @@
             this.InfoMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.LogoutMenuStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.cbo_Lop = new System.Windows.Forms.ComboBox();
+            this.đổiTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.grd_LopGiangDay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip.SuspendLayout();
@@ -54,7 +55,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.Location = new System.Drawing.Point(379, 165);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(350, 32);
+            this.label1.Size = new System.Drawing.Size(349, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Danh sách lớp giảng dạy";
             // 
@@ -144,7 +145,7 @@
             this.NameMenuStrip});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(76, 31);
+            this.menuStrip.Size = new System.Drawing.Size(226, 31);
             this.menuStrip.TabIndex = 8;
             this.menuStrip.Text = "menuStrip";
             // 
@@ -155,12 +156,14 @@
             this.NameMenuStrip.CheckState = System.Windows.Forms.CheckState.Checked;
             this.NameMenuStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.InfoMenuStrip,
-            this.LogoutMenuStrip});
+            this.LogoutMenuStrip,
+            this.đổiTàiKhoảnToolStripMenuItem});
             this.NameMenuStrip.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.NameMenuStrip.ForeColor = System.Drawing.Color.Black;
             this.NameMenuStrip.Name = "NameMenuStrip";
             this.NameMenuStrip.Size = new System.Drawing.Size(68, 27);
             this.NameMenuStrip.Text = "Menu";
+            this.NameMenuStrip.Click += new System.EventHandler(this.NameMenuStrip_Click);
             // 
             // InfoMenuStrip
             // 
@@ -183,6 +186,13 @@
             this.cbo_Lop.Name = "cbo_Lop";
             this.cbo_Lop.Size = new System.Drawing.Size(132, 24);
             this.cbo_Lop.TabIndex = 11;
+            // 
+            // đổiTàiKhoảnToolStripMenuItem
+            // 
+            this.đổiTàiKhoảnToolStripMenuItem.Name = "đổiTàiKhoảnToolStripMenuItem";
+            this.đổiTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(234, 28);
+            this.đổiTàiKhoảnToolStripMenuItem.Text = "Đổi Tài Khoản";
+            this.đổiTàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.đổiTàiKhoảnToolStripMenuItem_Click);
             // 
             // frm_GiangVien
             // 
@@ -225,5 +235,6 @@
         private System.Windows.Forms.ToolStripMenuItem InfoMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem LogoutMenuStrip;
         private System.Windows.Forms.ComboBox cbo_Lop;
+        private System.Windows.Forms.ToolStripMenuItem đổiTàiKhoảnToolStripMenuItem;
     }
 }
