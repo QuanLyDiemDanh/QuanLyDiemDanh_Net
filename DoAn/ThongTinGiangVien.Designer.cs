@@ -67,6 +67,7 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin giảng viên:";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // lb_MaGV
             // 
@@ -197,7 +198,7 @@
             this.butDoi.Name = "butDoi";
             this.butDoi.Size = new System.Drawing.Size(164, 23);
             this.butDoi.TabIndex = 12;
-            this.butDoi.Text = "Đổi Tài Khoản";
+            this.butDoi.Text = "Lấy Lại Mật Khẩu";
             this.butDoi.UseVisualStyleBackColor = true;
             this.butDoi.Click += new System.EventHandler(this.butDoi_Click);
             // 

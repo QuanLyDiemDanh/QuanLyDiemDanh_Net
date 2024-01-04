@@ -64,3 +64,167 @@ D:\BT\BT\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.csproj.CoreCompileInputs.cache
 D:\BT\BT\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.exe
 D:\BT\BT\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.pdb
 D:\BT\BT\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.TaiKHoanGV.resources
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.csproj.AssemblyReference.cache
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.FrmDangNhap.resources
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.FrmKhoa.resources
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.frm_GiangVien.resources
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.frm_GV_DiemDanh.resources
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.frm_QLGV.resources
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.Frm_QLSV.resources
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.frm_SinhVien.resources
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.Properties.Resources.resources
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.TaiKHoanGV.resources
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.ThongTinGiangVien.resources
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.csproj.GenerateResource.cache
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.csproj.CoreCompileInputs.cache
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.exe
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.pdb
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\DoAn.exe.config
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\DoAn.exe
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\DoAn.pdb
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\EPPlus.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\EPPlus.Interfaces.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\EPPlus.System.Drawing.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\EPPlus.xml
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.csproj.CopyComplete
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\EnvDTE.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\stdole.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\NHAT TAN\Downloads\QuanLyDiemDanh_Net\DoAn\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\DoAn.exe.config
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\DoAn.exe
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\DoAn.pdb
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\EPPlus.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\EPPlus.Interfaces.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\EPPlus.System.Drawing.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\EnvDTE.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\stdole.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.MSXML.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\EPPlus.xml
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.csproj.AssemblyReference.cache
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.FrmDangNhap.resources
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.FrmKhoa.resources
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.frm_GiangVien.resources
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.frm_GV_DiemDanh.resources
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.frm_QLGV.resources
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.Frm_QLSV.resources
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.frm_SinhVien.resources
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.Properties.Resources.resources
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.TaiKHoanGV.resources
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.ThongTinGiangVien.resources
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.csproj.GenerateResource.cache
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.csproj.CoreCompileInputs.cache
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.csproj.CopyComplete
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.exe
+C:\Users\kebao\OneDrive\Desktop\QuanLyDiemDanh_Net\DoAn\obj\Debug\DoAn.pdb

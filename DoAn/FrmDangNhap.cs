@@ -106,12 +106,6 @@ namespace DoAn
 
         }
 
-        private void chkMK_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkMK.Checked)
-                txtpass.UseSystemPasswordChar = true;
-            else
-                txtpass.UseSystemPasswordChar = false;
-        }
+
     }
 }

@@ -2,6 +2,10 @@
 using System.Data;
 using System.Windows.Forms;
 using DoAn.Models;
+using System.IO;
+using OfficeOpenXml;
+using Excel = Microsoft.Office.Interop.Excel;
+using System.Collections.Generic;
 
 namespace DoAn
 {
@@ -257,6 +261,87 @@ namespace DoAn
         private void Frm_QLSV_Load(object sender, EventArgs e)
         {
 
+        }
+        private void Xuat(string Path)
+        {
+            Excel.Application application = new Excel.Application();
+            application.Application.Workbooks.Add(Type.Missing);
+            for (int i = 0; i < dataGridView_SinhVien.Columns.Count; i++)
+            {
+                application.Cells[1, i + 1] = dataGridView_SinhVien.Columns[i].HeaderText;
+            }
+            for (int i = 0; i < dataGridView_SinhVien.Rows.Count; i++)
+
+            {
+                for (int j = 0; i < dataGridView_SinhVien.Columns.Count; i++)
+                {
+                    application.Cells[i + 2, j + 1] = dataGridView_SinhVien.Rows[i].Cells[j].Value;
+                }
+            }
+            application.Columns.AutoFit();
+            application.ActiveWorkbook.SaveCopyAs(Path);
+            application.ActiveWorkbook.Saved = true;
+        }
+        private void butEp_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Title = "Export Excel";
+            saveFileDialog.Filter = "Excel (*.xlsx)|*.xlsx|Excel Workbook (.xlx)|.xls";
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    Xuat(saveFileDialog.FileName);
+                    MessageBox.Show("file thành công");
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("thành công" + ex.Message);
+                }
+            }
+        }
+        private void ImportEX(string Path)
+        {
+            using (ExcelPackage excelPackage = new ExcelPackage(Path))
+            {
+                ExcelWorksheet excelWorksheet = excelPackage.Workbook.Worksheets[0];
+                DataTable dataTable = new DataTable();
+                for (int i = excelWorksheet.Dimension.Start.Column; i <= excelWorksheet.Dimension.End.Column; i++)
+                {
+                    dataTable.Columns.Add(excelWorksheet.Cells[1, i].Value.ToString());
+                }
+                for (int i = excelWorksheet.Dimension.Start.Row + 1; i <= excelWorksheet.Dimension.End.Row; i++)
+                {
+                    List<string> list = new List<string>();
+                    for (int j = excelWorksheet.Dimension.Start.Column; j <= excelWorksheet.Dimension.End.Column; j++)
+                    {
+                        list.Add(excelWorksheet.Cells[i, j].Value.ToString());
+                    }
+                    dataTable.Rows.Add(list.ToArray());
+                }
+                dataGridView_SinhVien.DataSource = dataTable;
+            }
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Title = "Import Excel";
+            openFileDialog.Filter = "Excel (*.xlsx)|*.xlsx|Excel Workbook (.xlx)|.xls";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    ImportEX(openFileDialog.FileName);
+                    MessageBox.Show("file thành công");
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(" không thành công\n" + ex.Message);
+                }
+            }
         }
     }
 }

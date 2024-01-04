@@ -56,6 +56,9 @@ namespace DoAn
             this.txt_tim = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.butXuat = new System.Windows.Forms.Button();
+            this.butIP = new System.Windows.Forms.Button();
+            this.butWord = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridGV)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -76,6 +79,7 @@ namespace DoAn
             this.dataGridGV.RowTemplate.Height = 24;
             this.dataGridGV.Size = new System.Drawing.Size(760, 246);
             this.dataGridGV.TabIndex = 11;
+            this.dataGridGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridGV_CellContentClick);
             // 
             // MaGiangVien
             // 
@@ -246,7 +250,7 @@ namespace DoAn
             // btn_huy
             // 
             this.btn_huy.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_huy.Location = new System.Drawing.Point(826, 418);
+            this.btn_huy.Location = new System.Drawing.Point(244, 515);
             this.btn_huy.Name = "btn_huy";
             this.btn_huy.Size = new System.Drawing.Size(100, 38);
             this.btn_huy.TabIndex = 31;
@@ -262,6 +266,7 @@ namespace DoAn
             this.btn_sua.TabIndex = 30;
             this.btn_sua.Text = "Sửa";
             this.btn_sua.UseVisualStyleBackColor = true;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_xoa
             // 
@@ -282,6 +287,7 @@ namespace DoAn
             this.btn_them.TabIndex = 28;
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click_1);
             // 
             // btn_hienthi
             // 
@@ -322,6 +328,36 @@ namespace DoAn
             this.label7.TabIndex = 24;
             this.label7.Text = "Tìm kiếm GV";
             // 
+            // butXuat
+            // 
+            this.butXuat.Location = new System.Drawing.Point(876, 368);
+            this.butXuat.Name = "butXuat";
+            this.butXuat.Size = new System.Drawing.Size(119, 30);
+            this.butXuat.TabIndex = 32;
+            this.butXuat.Text = "Xuất EXCEL";
+            this.butXuat.UseVisualStyleBackColor = true;
+            this.butXuat.Click += new System.EventHandler(this.butXuat_Click);
+            // 
+            // butIP
+            // 
+            this.butIP.Location = new System.Drawing.Point(876, 418);
+            this.butIP.Name = "butIP";
+            this.butIP.Size = new System.Drawing.Size(119, 38);
+            this.butIP.TabIndex = 33;
+            this.butIP.Text = "Import";
+            this.butIP.UseVisualStyleBackColor = true;
+            this.butIP.Click += new System.EventHandler(this.butIP_Click);
+            // 
+            // butWord
+            // 
+            this.butWord.Location = new System.Drawing.Point(517, 514);
+            this.butWord.Name = "butWord";
+            this.butWord.Size = new System.Drawing.Size(75, 23);
+            this.butWord.TabIndex = 34;
+            this.butWord.Text = "Word";
+            this.butWord.UseVisualStyleBackColor = true;
+            this.butWord.Click += new System.EventHandler(this.butWord_Click);
+            // 
             // frm_QLGV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -329,6 +365,9 @@ namespace DoAn
             this.BackgroundImage = global::DoAn.Properties.Resources.background_tet_nguyen_dan_27;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1040, 559);
+            this.Controls.Add(this.butWord);
+            this.Controls.Add(this.butIP);
+            this.Controls.Add(this.butXuat);
             this.Controls.Add(this.btn_huy);
             this.Controls.Add(this.btn_sua);
             this.Controls.Add(this.btn_xoa);
@@ -379,5 +418,8 @@ namespace DoAn
         private System.Windows.Forms.TextBox txt_tim;
         private System.Windows.Forms.Label label7;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button butXuat;
+        private System.Windows.Forms.Button butIP;
+        private System.Windows.Forms.Button butWord;
     }
 }

@@ -6,7 +6,7 @@ namespace DoAn
 {
     class DBConnect
     {
-        private static string stringConnection = @"Data Source=DESKTOP-B3HHTL3\SQLEXPRESS;Initial Catalog=QuanLyDiemDanh4;Integrated Security=True";
+        private static string stringConnection = @"Data Source=LAPTOP-GSL3DJO2;Initial Catalog=DDSV_Last;Integrated Security=True";
         public static SqlConnection GetSqlConnection()
         {
             return new SqlConnection(stringConnection);

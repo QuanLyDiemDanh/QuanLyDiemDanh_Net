@@ -35,7 +35,6 @@ namespace DoAn
             this.txtpass = new System.Windows.Forms.TextBox();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.chkMK = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // TaiKhoan
@@ -75,7 +74,6 @@ namespace DoAn
             this.txtpass.Location = new System.Drawing.Point(340, 161);
             this.txtpass.Name = "txtpass";
             this.txtpass.PasswordChar = '*';
-            this.txtpass.ReadOnly = true;
             this.txtpass.Size = new System.Drawing.Size(228, 45);
             this.txtpass.TabIndex = 2;
             // 
@@ -85,7 +83,7 @@ namespace DoAn
             this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDangNhap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangNhap.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnDangNhap.Location = new System.Drawing.Point(178, 318);
+            this.btnDangNhap.Location = new System.Drawing.Point(171, 255);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(163, 61);
             this.btnDangNhap.TabIndex = 3;
@@ -100,24 +98,13 @@ namespace DoAn
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnClose.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnClose.Location = new System.Drawing.Point(470, 304);
+            this.btnClose.Location = new System.Drawing.Point(405, 255);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(163, 61);
             this.btnClose.TabIndex = 3;
             this.btnClose.Text = "THOÁT";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // chkMK
-            // 
-            this.chkMK.AutoSize = true;
-            this.chkMK.Location = new System.Drawing.Point(340, 263);
-            this.chkMK.Name = "chkMK";
-            this.chkMK.Size = new System.Drawing.Size(115, 20);
-            this.chkMK.TabIndex = 4;
-            this.chkMK.Text = "Hiện Mật Khẩu";
-            this.chkMK.UseVisualStyleBackColor = true;
-            this.chkMK.CheckedChanged += new System.EventHandler(this.chkMK_CheckedChanged);
             // 
             // FrmDangNhap
             // 
@@ -126,7 +113,6 @@ namespace DoAn
             this.BackgroundImage = global::DoAn.Properties.Resources.background_tet_nguyen_dan_27;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(734, 433);
-            this.Controls.Add(this.chkMK);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.txtpass);
@@ -151,7 +137,6 @@ namespace DoAn
         private System.Windows.Forms.TextBox txtpass;
         private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.CheckBox chkMK;
     }
 }
 

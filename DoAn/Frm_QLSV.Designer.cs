@@ -58,6 +58,8 @@ namespace DoAn
             this.cbbLopNienChe = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_MaSv = new System.Windows.Forms.TextBox();
+            this.butEp = new System.Windows.Forms.Button();
+            this.butImSV = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_SinhVien)).BeginInit();
             this.SuspendLayout();
             // 
@@ -379,12 +381,34 @@ namespace DoAn
             this.txt_MaSv.Size = new System.Drawing.Size(219, 30);
             this.txt_MaSv.TabIndex = 1;
             // 
+            // butEp
+            // 
+            this.butEp.Location = new System.Drawing.Point(776, 494);
+            this.butEp.Name = "butEp";
+            this.butEp.Size = new System.Drawing.Size(91, 23);
+            this.butEp.TabIndex = 25;
+            this.butEp.Text = "Export";
+            this.butEp.UseVisualStyleBackColor = true;
+            this.butEp.Click += new System.EventHandler(this.butEp_Click);
+            // 
+            // butImSV
+            // 
+            this.butImSV.Location = new System.Drawing.Point(652, 495);
+            this.butImSV.Name = "butImSV";
+            this.butImSV.Size = new System.Drawing.Size(75, 23);
+            this.butImSV.TabIndex = 26;
+            this.butImSV.Text = "Import";
+            this.butImSV.UseVisualStyleBackColor = true;
+            this.butImSV.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Frm_QLSV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DoAn.Properties.Resources.Red_Color;
             this.ClientSize = new System.Drawing.Size(1224, 529);
+            this.Controls.Add(this.butImSV);
+            this.Controls.Add(this.butEp);
             this.Controls.Add(this.btn_HienThiALL);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.label8);
@@ -450,5 +474,7 @@ namespace DoAn
         private System.Windows.Forms.ComboBox cbbLopNienChe;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txt_MaSv;
+        private System.Windows.Forms.Button butEp;
+        private System.Windows.Forms.Button butImSV;
     }
 }
